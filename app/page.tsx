@@ -1,65 +1,83 @@
-import Image from "next/image";
+import { Section } from "@/components/ui/section";
+import { SelectionProvider } from "@/components/providers/selection-provider";
+import { BrandSelector } from "@/components/sections/brand-selector/brand-selector";
+import { SiteFooter } from "@/components/sections/footer/site-footer";
+import { Masthead } from "@/components/sections/masthead/masthead";
+import { Narratives } from "@/components/sections/narratives/narratives";
+import { Playbook } from "@/components/sections/playbook/playbook";
+import { ShareOfVoice } from "@/components/sections/share-of-voice/share-of-voice";
+import { SummaryMetrics } from "@/components/sections/summary-metrics/summary-metrics";
+import { Ticker } from "@/components/sections/ticker/ticker";
+import { TrendChart } from "@/components/sections/weekly-pulse/trend-chart";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <Ticker />
+      <main className="mx-auto max-w-295 px-8 max-[700px]:px-4.5">
+        <Masthead />
+
+        <SelectionProvider>
+          <Section
+            meta={{
+              num: "01",
+              kicker: "Share of Voice",
+              title: "Where the engagement is sitting right now",
+              note: "Share of total measured engagement (views + weighted likes/comments/shares) across 1,940 brand-relevant posts, June 1 - July 1.",
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <ShareOfVoice />
+          </Section>
+          <Section
+            meta={{
+              num: "02",
+              kicker: "Your Position",
+              title: "Tell us who you are",
+              note: "Selecting a house benchmarks it against the other four and surfaces a counter-move for each rival.",
+            }}
+            divider
           >
-            Documentation
-          </a>
-        </div>
+            <BrandSelector />
+          </Section>
+          <Section
+            meta={{
+              num: "03",
+              kicker: "Weekly Pulse",
+              title: "Engagement trajectory, by week",
+              note: "Dated posts only (a subset of the full sample - see note below). Undated evergreen and collector content is excluded from this trend line but counted in Share of Voice.",
+            }}
+            divider
+          >
+            <TrendChart />
+          </Section>
+          <Playbook />
+        </SelectionProvider>
+
+        <Section
+          meta={{
+            num: "05",
+            kicker: "Summary Metrics",
+            title: "The numbers behind the read",
+            note: "Comments-per-post is the strongest proxy we have for real conversation vs. passive scrolling.",
+          }}
+          divider
+        >
+          <SummaryMetrics />
+        </Section>
+        <Section
+          meta={{
+            num: "06",
+            kicker: "Content Narratives",
+            title: "What each house's audience is actually talking about",
+            note: "Auto-clustered content themes, top performing posts and the highest-premium, still-uncrowded tags for each house.",
+          }}
+          divider
+        >
+          <Narratives />
+        </Section>
+
+        <SiteFooter />
       </main>
-    </div>
+    </>
   );
 }
