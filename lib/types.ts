@@ -97,3 +97,5 @@ export interface TopicContent {
   footer: string;
   playbooks: Record<string, Playbook>;
 }
+
+export type BaseContent = Omit<TopicContent, "playbooks">;

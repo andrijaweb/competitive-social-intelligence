@@ -10,8 +10,7 @@ It ships as a template. The numbers are **pulled** from KINETK into a JSON file,
 the words are **authored** in a config file, and the branding lives in a third -
 so you can point it at your own subjects without touching the UI. A ready-made
 luxury-watch dataset is included as the worked example, but nothing in the UI is
-watch-specific; a second `sneakers` topic is pre-filled in the config as a
-switching example (pull its data to activate it - see below).
+watch-specific - point it at any set of subjects and the whole page follows.
 
 ## Quick start
 
@@ -118,8 +117,8 @@ To point the dashboard at your own competitive set:
    ```
 
    This reads `ACTIVE_TOPIC`, hits KINETK once per subject, and writes
-   `data/<topic>.json`. (To pull a topic other than the active one:
-   `npm run pull -- --topic=sneakers`.)
+   `data/<topic>.json`. (To pull a topic other than the active one, pass it
+   explicitly: `npm run pull -- --topic=<topic>`.)
 
 3. **Register the dataset** in [lib/data.ts](lib/data.ts) if the topic is new:
    import your JSON and add it to the `DATASETS` map.
@@ -133,14 +132,16 @@ To point the dashboard at your own competitive set:
    };
    ```
 
-4. **Author the copy** in [config/content.ts](config/content.ts). Add a block
-   keyed by your topic with the masthead, section notes and footer (copy the
-   `watches` or `sneakers` block and edit the words). Copy tokens `{brand}`,
-   `{subjects}` and `{platforms}` are filled in from the active dataset at render
-   time. `playbooks` are **optional** and keyed by subject id (a slug of the
-   name, e.g. `patek-philippe`): write one to hand-author the analysis, or leave
-   a subject out and the page renders a plain, no-LLM summary built from that
-   subject's own numbers.
+4. **(Optional) Customize the copy** in [config/content.ts](config/content.ts).
+   You don't have to: every topic falls back to the generic `DEFAULT_CONTENT`
+   (masthead, section notes, footer) written in neutral wording, so a new topic
+   renders with no edits here. To override, add an entry keyed by your topic with
+   **only** the fields worth changing - a sharper headline, or hand-written
+   `playbooks`. Copy tokens `{brand}`, `{subjects}` and `{platforms}` are filled
+   in from the active dataset at render time. `playbooks` are keyed by subject id
+   (a slug of the name, e.g. `patek-philippe`): write one to hand-author the
+   analysis, or leave a subject out and the page renders a plain, no-LLM summary
+   built from that subject's own numbers.
 
 The aggregate metrics - engagement score, share of voice, comments-per-post -
 are **derived** in [lib/metrics.ts](lib/metrics.ts) from the raw counts, so they

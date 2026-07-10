@@ -1,12 +1,17 @@
-import type { TopicContent } from "@/lib/types";
+import type { BaseContent, TopicContent } from "@/lib/types";
 
 /**
  * ============================================================================
- *  CONTENT  -  the authored WORDS
+ *  CONTENT  -  the authored WORDS (all optional)
  * ============================================================================
- *  Every editable string on the page lives here, keyed by topic. `npm run pull`
- *  regenerates the numbers in `data/<topic>.json` but never touches this file,
- *  so your headline, section copy and playbooks survive a refresh.
+ *  `DEFAULT_CONTENT` is generic copy that works for ANY topic, so a new subject
+ *  renders with ZERO edits here - you only touch config/subjects.ts.
+ *
+ *  `CONTENT` holds per-topic OVERRIDES, and every field is optional: supply just
+ *  the bits worth customizing (a sharper headline, hand-written playbooks) and
+ *  the rest falls back to DEFAULT_CONTENT. A topic with nothing to customize
+ *  needs no entry at all. `npm run pull` regenerates data/<topic>.json but never
+ *  touches this file, so your copy survives a refresh.
  *
  *  Tokens filled in at render time from the active dataset:
  *    {brand}      -> your product name (config/brand.ts)
@@ -14,12 +19,74 @@ import type { TopicContent } from "@/lib/types";
  *    {platforms}  -> the platforms present, e.g. "TikTok, Instagram and X"
  *
  *  Playbooks are keyed by subject id (a slug of the name, e.g. "patek-philippe").
- *  Leave a subject out of `playbooks` and the page renders a plain, no-LLM
- *  summary built from that subject's own numbers instead.
+ *  Leave a subject out of `playbooks` (or omit playbooks entirely) and the page
+ *  renders a plain, no-LLM summary built from that subject's own numbers.
  * ============================================================================
  */
 
-export const CONTENT: Record<string, TopicContent> = {
+/**
+ * Generic copy used for any topic that doesn't override it in `CONTENT` below.
+ * Neutral wording ("brand", "the field") so it reads fine for any subject -
+ * watches, beers, anything.
+ */
+export const DEFAULT_CONTENT: BaseContent = {
+  masthead: {
+    eyebrow: "{brand} · Social Intelligence · Trailing 30 Days",
+    headline: {
+      lead: "The full field, one view.",
+      emphasis: "Who's actually winning the room -",
+      trail: "and why.",
+    },
+    description:
+      "A cross-platform read on {subjects} - built from live {platforms} activity. Pick your brand to see who's pulling ahead, what they're doing differently, and the counter-move worth running this week.",
+  },
+  sections: {
+    shareOfVoice: {
+      num: "01",
+      kicker: "Share of Voice",
+      title: "Where the engagement is sitting right now",
+      note: "Share of total measured engagement (views + weighted likes/comments/shares) across the full brand-relevant sample.",
+    },
+    position: {
+      num: "02",
+      kicker: "Your Position",
+      title: "Tell us who you are",
+      note: "Selecting a brand benchmarks it against the others and surfaces a counter-move for each rival.",
+    },
+    weeklyPulse: {
+      num: "03",
+      kicker: "Weekly Pulse",
+      title: "Engagement trajectory, by week",
+      note: "Dated posts only (a subset of the full sample - see note below). Undated evergreen content is excluded from this trend line but counted in Share of Voice.",
+    },
+    playbook: {
+      num: "04",
+      kicker: "The Playbook",
+      title: "What each brand is doing - and the counter",
+      note: "Built from each brand's own top-performing content and white-space tags over the last 30 days.",
+    },
+    summaryMetrics: {
+      num: "05",
+      kicker: "Summary Metrics",
+      title: "The numbers behind the read",
+      note: "Comments-per-post is the strongest proxy we have for real conversation vs. passive scrolling.",
+    },
+    narratives: {
+      num: "06",
+      kicker: "Content Narratives",
+      title: "What each brand's audience is actually talking about",
+      note: "Auto-clustered content themes, top performing posts and the highest-premium, still-uncrowded tags for each brand.",
+    },
+  },
+  footer:
+    "This page is fed by KINETK pulls, one per brand. Engagement metrics (Share of Voice, weekly trend, summary stats, top posts) are aggregated from the sampled posts across {platforms}, trailing 30 days, filtered to the on-topic set by keyword relevance. Off-topic viral bleed-through is down-weighted before scoring. Engagement score weights views x1, likes x3, comments x5, shares x8. Narratives and white-space tags (section 06) come from KINETK's insights and can be refreshed live via the button above. The weekly trend chart uses only posts with a recoverable publish date; Share of Voice and summary metrics use the full filtered sample. This is a directional read on a fixed sample, not a certified brand-tracking metric.",
+};
+
+/**
+ * Per-topic overrides. Each entry is a Partial - include only what you want to
+ * change; everything else comes from DEFAULT_CONTENT above.
+ */
+export const CONTENT: Record<string, Partial<TopicContent>> = {
   watches: {
     masthead: {
       eyebrow: "{brand} · Social Intelligence · Trailing 30 Days",
@@ -152,59 +219,13 @@ export const CONTENT: Record<string, TopicContent> = {
     },
   },
 
-  sneakers: {
-    masthead: {
-      eyebrow: "{brand} · Social Intelligence · Trailing 30 Days",
-      headline: {
-        lead: "Five brands, one feed.",
-        emphasis: "Who's actually winning the room -",
-        trail: "and why.",
-      },
-      description:
-        "A cross-platform read on {subjects} - built from live {platforms} activity. Pick your brand to see who's pulling ahead, what they're doing differently, and the counter-move worth running this week.",
-    },
-    sections: {
-      shareOfVoice: {
-        num: "01",
-        kicker: "Share of Voice",
-        title: "Where the engagement is sitting right now",
-        note: "Share of total measured engagement (views + weighted likes/comments/shares) across the full brand-relevant sample.",
-      },
-      position: {
-        num: "02",
-        kicker: "Your Position",
-        title: "Tell us who you are",
-        note: "Selecting a brand benchmarks it against the others and surfaces a counter-move for each rival.",
-      },
-      weeklyPulse: {
-        num: "03",
-        kicker: "Weekly Pulse",
-        title: "Engagement trajectory, by week",
-        note: "Dated posts only (a subset of the full sample - see note below). Undated evergreen content is excluded from this trend line but counted in Share of Voice.",
-      },
-      playbook: {
-        num: "04",
-        kicker: "The Playbook",
-        title: "What each brand is doing - and the counter",
-        note: "Built from each brand's own top-performing content and white-space tags over the last 30 days.",
-      },
-      summaryMetrics: {
-        num: "05",
-        kicker: "Summary Metrics",
-        title: "The numbers behind the read",
-        note: "Comments-per-post is the strongest proxy we have for real conversation vs. passive scrolling.",
-      },
-      narratives: {
-        num: "06",
-        kicker: "Content Narratives",
-        title: "What each brand's audience is actually talking about",
-        note: "Auto-clustered content themes, top performing posts and the highest-premium, still-uncrowded tags for each brand.",
-      },
-    },
-    footer:
-      "This page is fed by KINETK pulls, one per brand. Engagement metrics (Share of Voice, weekly trend, summary stats, top posts) are aggregated from the sampled posts across {platforms}, trailing 30 days, filtered to the on-topic set by keyword relevance. Off-topic viral bleed-through is down-weighted before scoring. Engagement score weights views x1, likes x3, comments x5, shares x8. Narratives and white-space tags (section 06) come from KINETK's insights and can be refreshed live via the button above. The weekly trend chart uses only posts with a recoverable publish date; Share of Voice and summary metrics use the full filtered sample. This is a directional read on a fixed sample, not a certified brand-tracking metric.",
-    // No authored playbooks - each card falls back to a plain, no-LLM summary
-    // built from that brand's own numbers. Write your own here to override.
-    playbooks: {},
-  },
+  // A topic with nothing to customize needs no entry here - it renders entirely
+  // from DEFAULT_CONTENT with auto-generated playbooks. To hand-write just the
+  // playbooks (the one genuinely per-subject bit), override only that key:
+  //
+  //   "my-topic": {
+  //     playbooks: {
+  //       "subject-id": { headline: "...", drivers: ["..."], counters: ["..."], caveat: null },
+  //     },
+  //   },
 };

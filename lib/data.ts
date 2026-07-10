@@ -17,7 +17,7 @@ import { computeStats } from "./metrics";
 import { formatCompact, PLATFORM_LABELS } from "./format";
 import { brand } from "@/config/brand";
 import { ACTIVE_TOPIC } from "@/config/subjects";
-import { CONTENT } from "@/config/content";
+import { CONTENT, DEFAULT_CONTENT } from "@/config/content";
 import watchesData from "@/data/watches.json";
 
 /** Every generated dataset the app knows about. Add a line per new topic. */
@@ -26,17 +26,17 @@ const DATASETS: Record<string, Dataset> = {
 };
 
 const dataset = DATASETS[ACTIVE_TOPIC];
-const topicContent = CONTENT[ACTIVE_TOPIC];
 if (!dataset) {
   throw new Error(
     `No dataset for "${ACTIVE_TOPIC}". Run \`npm run pull\` to generate data/${ACTIVE_TOPIC}.json.`,
   );
 }
-if (!topicContent) {
-  throw new Error(
-    `No content block for "${ACTIVE_TOPIC}" in config/content.ts.`,
-  );
-}
+
+const override = CONTENT[ACTIVE_TOPIC] ?? {};
+const masthead = override.masthead ?? DEFAULT_CONTENT.masthead;
+const sections = override.sections ?? DEFAULT_CONTENT.sections;
+const footer = override.footer ?? DEFAULT_CONTENT.footer;
+const playbooks = override.playbooks ?? {};
 
 const baseEntities: EntityData[] = dataset.entities;
 
@@ -119,7 +119,7 @@ function fallbackPlaybook(e: EntityData): Playbook {
 /** The active topic's entities, each with a resolved playbook. */
 export const entities: Entity[] = baseEntities.map((e) => ({
   ...e,
-  playbook: topicContent.playbooks[e.id] ?? fallbackPlaybook(e),
+  playbook: playbooks[e.id] ?? fallbackPlaybook(e),
 }));
 
 export function getEntity(id: string): Entity | undefined {
@@ -152,10 +152,10 @@ function fill(text: string): string {
 /** Resolved, ready-to-render page copy for the active topic. */
 export const content = {
   masthead: {
-    eyebrow: fill(topicContent.masthead.eyebrow),
-    headline: topicContent.masthead.headline,
-    description: fill(topicContent.masthead.description),
+    eyebrow: fill(masthead.eyebrow),
+    headline: masthead.headline,
+    description: fill(masthead.description),
   },
-  sections: topicContent.sections,
-  footer: fill(topicContent.footer),
+  sections,
+  footer: fill(footer),
 };
