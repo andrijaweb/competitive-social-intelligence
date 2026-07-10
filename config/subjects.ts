@@ -32,22 +32,11 @@ export const TOPICS: Record<string, TopicSubjects> = {
     window: "30d",
     limit: 500,
     subjects: [
-      { query: "Rolex", color: "#cba135" },
+      { query: "Rolex watches", name: "Rolex", color: "#cba135" },
       { query: "Patek Philippe", color: "#4c8a6e" },
       { query: "Audemars Piguet", color: "#6683f5" },
       { query: "Richard Mille", color: "#e0525c" },
       { query: "Omega watches", name: "Omega", color: "#34b3ac" },
-    ],
-  },
-  sneakers: {
-    window: "30d",
-    limit: 500,
-    subjects: [
-      { query: "Nike sneakers", name: "Nike", color: "#e8623a" },
-      { query: "Adidas sneakers", name: "Adidas", color: "#5b7fe0" },
-      { query: "New Balance sneakers", name: "New Balance", color: "#cf4b4b" },
-      { query: "Puma sneakers", name: "Puma", color: "#c99a3c" },
-      { query: "Asics sneakers", name: "Asics", color: "#39a0c4" },
     ],
   },
 };

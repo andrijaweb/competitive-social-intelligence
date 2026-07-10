@@ -10,7 +10,7 @@ import {
   shapeEntity,
   type InsightsResultRaw,
 } from "../lib/pull-core.ts";
-import type { Dataset, EntityData } from "../lib/types.ts";
+import type { Dataset, EntityData, Subject } from "../lib/types.ts";
 
 const MCP_URL = process.env.KINETK_MCP_URL ?? "https://api.kinetk.ai/graph/mcp";
 const POLL_INTERVAL_MS = 3000;
@@ -20,8 +20,13 @@ const MAX_RETRIES = 3;
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
+class JobFailedError extends Error {}
+
 async function connect(): Promise<Client> {
-  const client = new Client({ name: "social-intelligence-pull", version: "1.0.0" });
+  const client = new Client({
+    name: "social-intelligence-pull",
+    version: "1.0.0",
+  });
   const transport = new StreamableHTTPClientTransport(new URL(MCP_URL), {
     requestInit: { headers: { "x-api-key": process.env.KINETK_API_KEY! } },
   });
@@ -83,7 +88,7 @@ async function runInsightsJob(
     if (status.status === "failed") {
       const reason =
         typeof status.error === "string" ? status.error : "unknown error";
-      throw new Error(`KINETK job failed for "${query}": ${reason}`);
+      throw new JobFailedError(`KINETK job failed for "${query}": ${reason}`);
     }
     if (status.status === "completed" || status.status === "succeeded") break;
     if (i === MAX_POLLS - 1)
@@ -123,20 +128,24 @@ async function main() {
   );
 
   let client = await connect();
-  const raw: InsightsResultRaw[] = [];
+  const done: { subject: Subject; result: InsightsResultRaw }[] = [];
+  const failures: { subject: string; error: string }[] = [];
   try {
     for (const subject of subjects) {
-      process.stdout.write(`  - ${subject.name ?? subject.query} ... `);
+      const label = subject.name ?? subject.query;
+      process.stdout.write(`  - ${label} ... `);
 
       let result: InsightsResultRaw | undefined;
+      let lastError = "unknown error";
       for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
         try {
           result = await runInsightsJob(client, subject.query, window, limit);
           break;
         } catch (err) {
-          if (attempt === MAX_RETRIES) throw err;
-          const msg = err instanceof Error ? err.message : String(err);
-          process.stdout.write(`retry ${attempt} (${msg}) ... `);
+          lastError = err instanceof Error ? err.message : String(err);
+
+          if (err instanceof JobFailedError || attempt === MAX_RETRIES) break;
+          process.stdout.write(`retry ${attempt} (${lastError}) ... `);
           try {
             await client.close();
           } catch {
@@ -146,17 +155,29 @@ async function main() {
           client = await connect();
         }
       }
-      raw.push(result!);
-      console.log(`ok (${result!.content?.length ?? 0} posts)`);
+
+      if (result) {
+        done.push({ subject, result });
+        console.log(`ok (${result.content?.length ?? 0} posts)`);
+      } else {
+        failures.push({ subject: label, error: lastError });
+        console.log(`FAILED (${lastError}) - skipping`);
+      }
     }
   } finally {
     await client.close();
   }
 
-  const allContent = raw.flatMap((r) => r.content ?? []);
+  if (done.length === 0) {
+    throw new Error(
+      `All ${subjects.length} subjects failed - nothing written. Last error: ${failures.at(-1)?.error ?? "unknown"}`,
+    );
+  }
+
+  const allContent = done.flatMap((d) => d.result.content ?? []);
   const weeks = computeWeekBuckets(window, Date.now(), allContent);
-  const entities: EntityData[] = subjects.map((s, i) =>
-    shapeEntity(s, raw[i], weeks),
+  const entities: EntityData[] = done.map((d) =>
+    shapeEntity(d.subject, d.result, weeks),
   );
 
   const dataset: Dataset = {
@@ -172,7 +193,15 @@ async function main() {
   mkdirSync(outDir, { recursive: true });
   const outPath = join(outDir, `${topic}.json`);
   writeFileSync(outPath, JSON.stringify(dataset, null, 2) + "\n");
-  console.log(`Wrote ${outPath} (${entities.length} entities).`);
+  console.log(
+    `Wrote ${outPath} (${entities.length}/${subjects.length} subjects).`,
+  );
+
+  if (failures.length > 0) {
+    console.warn(`\n${failures.length} subject(s) failed and were skipped:`);
+    for (const f of failures) console.warn(`  - ${f.subject}: ${f.error}`);
+    console.warn("Re-run the pull to fill them in once KINETK recovers.");
+  }
 }
 
 main().catch((err) => {
