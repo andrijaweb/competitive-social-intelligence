@@ -45,7 +45,7 @@ async function withClient<T>(
   apiKey: string,
   fn: (client: Client) => Promise<T>,
 ): Promise<T> {
-  const client = new Client({ name: "watches-dashboard", version: "1.0.0" });
+  const client = new Client({ name: "social-intelligence-dashboard", version: "1.0.0" });
   const transport = new StreamableHTTPClientTransport(new URL(MCP_URL), {
     requestInit: { headers: { "x-api-key": apiKey } },
   });

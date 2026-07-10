@@ -25,8 +25,8 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${brand.name} - Luxury Watch Social Intelligence`,
-  description: "Luxury Watch Social Intelligence",
+  title: `${brand.name} - Social Intelligence`,
+  description: `Competitive social intelligence dashboard by ${brand.name}.`,
 };
 
 export default function RootLayout({

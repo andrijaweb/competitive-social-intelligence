@@ -14,14 +14,14 @@ import type { Dataset, EntityData } from "../lib/types.ts";
 
 const MCP_URL = process.env.KINETK_MCP_URL ?? "https://api.kinetk.ai/graph/mcp";
 const POLL_INTERVAL_MS = 3000;
-const MAX_POLLS = 60; // ~3 minutes per job
+const MAX_POLLS = 120; // ~6 minutes per job (insights jobs can run ~5 min)
 const CALL_OPTS = { timeout: 180_000, resetTimeoutOnProgress: true } as const;
 const MAX_RETRIES = 3;
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 async function connect(): Promise<Client> {
-  const client = new Client({ name: "watches-pull", version: "1.0.0" });
+  const client = new Client({ name: "social-intelligence-pull", version: "1.0.0" });
   const transport = new StreamableHTTPClientTransport(new URL(MCP_URL), {
     requestInit: { headers: { "x-api-key": process.env.KINETK_API_KEY! } },
   });
@@ -80,8 +80,11 @@ async function runInsightsJob(
         CALL_OPTS,
       ),
     );
-    if (status.status === "failed")
-      throw new Error(`KINETK job failed for "${query}"`);
+    if (status.status === "failed") {
+      const reason =
+        typeof status.error === "string" ? status.error : "unknown error";
+      throw new Error(`KINETK job failed for "${query}": ${reason}`);
+    }
     if (status.status === "completed" || status.status === "succeeded") break;
     if (i === MAX_POLLS - 1)
       throw new Error(`KINETK job timed out for "${query}"`);
