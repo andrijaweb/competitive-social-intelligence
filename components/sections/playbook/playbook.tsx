@@ -1,7 +1,7 @@
 "use client";
 
 import type { CSSProperties, ReactNode } from "react";
-import { entities } from "@/lib/data";
+import { content, entities } from "@/lib/data";
 import { computeStats } from "@/lib/metrics";
 import { formatPercent } from "@/lib/format";
 import { Section } from "@/components/ui/section";
@@ -21,12 +21,7 @@ export function Playbook() {
         .sort((a, b) => stats[b.id].sharePct - stats[a.id].sharePct)
     : entities;
 
-  const meta = {
-    num: "04",
-    kicker: "The Playbook",
-    title: "What each house is doing - and the counter",
-    note: "Grounded in the actual top-performing content from each house's last 30 days, not category assumptions.",
-  };
+  const meta = content.sections.playbook;
 
   const title = selected
     ? `What's outpacing ${selected.name} - and your counter-move`

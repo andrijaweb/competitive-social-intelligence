@@ -1,0 +1,485 @@
+{
+  "topic": "watches",
+  "generatedAt": "2026-07-01T00:00:00.000Z",
+  "window": "30d",
+  "weekLabels": [
+    "Jun 1-7",
+    "Jun 8-14",
+    "Jun 15-21",
+    "Jun 22-28",
+    "Jun 29-Jul 1"
+  ],
+  "entities": [
+    {
+      "id": "rolex",
+      "name": "Rolex",
+      "color": "#cba135",
+      "metrics": {
+        "records": 339,
+        "views": 32637077,
+        "likes": 1000289,
+        "comments": 269,
+        "shares": 373
+      },
+      "platforms": {
+        "tiktok": 301,
+        "instagram": 13,
+        "reddit": 5,
+        "pinterest": 14,
+        "x": 6
+      },
+      "weekly": [
+        647,
+        76655,
+        29762,
+        10226,
+        6125
+      ],
+      "narratives": [
+        {
+          "label": "Iconic Heritage & 36mm Sizing",
+          "description": "Collectors and writers discuss the brand's historic legacy alongside practical sizing advice for classic 36mm references.",
+          "count": 225
+        },
+        {
+          "label": "Professional Sea & Air Watches",
+          "description": "Retailers highlight heavy-duty professional models - Submariner Date, Yacht-Master II, GMT-Master II - built for extreme durability.",
+          "count": 195
+        },
+        {
+          "label": "Vintage Datejust Classics",
+          "description": "Enthusiasts spotlight rare vintage Datejust models, especially classic Sigma dials and 1970s two-tone configurations.",
+          "count": 180
+        },
+        {
+          "label": "Datejust 41 Modern Releases",
+          "description": "Creators showcase current Datejust 41 models - green ombre dials, fluted bezels - via official pre-owned purchase programs.",
+          "count": 179
+        },
+        {
+          "label": "Oyster Perpetual 36 Showcases",
+          "description": "Sellers recommend the colorful, technicolor Jubilee-motif Oyster Perpetual 36 as an entry point into the brand.",
+          "count": 162
+        }
+      ],
+      "whitespace": [
+        {
+          "tag": "rarerolex",
+          "premiumPct": 150.2
+        },
+        {
+          "tag": "deals / auth",
+          "premiumPct": 146.9
+        },
+        {
+          "tag": "rolexlifestyle / water",
+          "premiumPct": 134.1
+        },
+        {
+          "tag": "hattongarden",
+          "premiumPct": 126.9
+        },
+        {
+          "tag": "watchreel",
+          "premiumPct": 121.5
+        }
+      ],
+      "posts": [
+        {
+          "platform": "tiktok",
+          "description": "A \"his & hers\" couples Datejust set - no dealer pitch, pure styling content. Single biggest post of the entire pull.",
+          "views": 8623731,
+          "likes": 225767
+        },
+        {
+          "platform": "tiktok",
+          "description": "Boutique in-stock post: Datejust 41 \"available in every dial\" (Leeds boutique, call-to-book).",
+          "views": 1860464,
+          "likes": 84332
+        },
+        {
+          "platform": "tiktok",
+          "description": "Dealer listing for a his-and-hers factory Datejust pair, complete with box and papers.",
+          "views": 1480757,
+          "likes": 27944
+        }
+      ]
+    },
+    {
+      "id": "patek-philippe",
+      "name": "Patek Philippe",
+      "color": "#4c8a6e",
+      "metrics": {
+        "records": 348,
+        "views": 11163097,
+        "likes": 448470,
+        "comments": 149,
+        "shares": 952
+      },
+      "platforms": {
+        "tiktok": 316,
+        "instagram": 11,
+        "reddit": 0,
+        "pinterest": 4,
+        "x": 17
+      },
+      "weekly": [
+        18503,
+        15520,
+        1323,
+        608998,
+        1332
+      ],
+      "narratives": [
+        {
+          "label": "Steel vs. Gold Nautilus Valuations",
+          "description": "Creators debate market values and the premium pricing of steel sports references like the iconic 5711.",
+          "count": 438
+        },
+        {
+          "label": "Elitist Complications & Collaborations",
+          "description": "Creators explain why ultra-wealthy buyers favor high-complication annual calendars and rare co-branded dials.",
+          "count": 373
+        },
+        {
+          "label": "High Horology Masterpieces",
+          "description": "Ultra-complex pieces like the Sky Moon Tourbillon 6002R are showcased to highlight extreme artisanal craft.",
+          "count": 308
+        },
+        {
+          "label": "Vintage Models & Ellipse Classics",
+          "description": "Classic vintage timepieces - the Golden Ellipse ref. 3738, the 1976 Onyx - draw dedicated collector attention.",
+          "count": 229
+        },
+        {
+          "label": "Billionaire Wristwear & Status",
+          "description": "Creators debate the watch choices of billionaires and heirs, contrasting sports models with platinum dress watches.",
+          "count": 102
+        }
+      ],
+      "whitespace": [
+        {
+          "tag": "myconciergeriee",
+          "premiumPct": 111.3
+        },
+        {
+          "tag": "patek57111r",
+          "premiumPct": 109
+        },
+        {
+          "tag": "marcgebauer",
+          "premiumPct": 87.4
+        },
+        {
+          "tag": "edutok",
+          "premiumPct": 86.5
+        },
+        {
+          "tag": "hublot",
+          "premiumPct": 81.2
+        }
+      ],
+      "posts": [
+        {
+          "platform": "tiktok",
+          "description": "Pure aesthetic-reaction clip on a rose-gold Nautilus - caption is just admiration, nothing else.",
+          "views": 1311740,
+          "likes": 150600
+        },
+        {
+          "platform": "tiktok",
+          "description": "Direct comparison bait: 5711/1R vs. 5712R, \"which one would you wear?\"",
+          "views": 779213,
+          "likes": 30292
+        },
+        {
+          "platform": "tiktok",
+          "description": "A steel 5711/1A blue-dial Nautilus framed as \"the world's most beautiful watch.\"",
+          "views": 527421,
+          "likes": 30937
+        }
+      ]
+    },
+    {
+      "id": "audemars-piguet",
+      "name": "Audemars Piguet",
+      "color": "#6683f5",
+      "metrics": {
+        "records": 482,
+        "views": 26629349,
+        "likes": 997733,
+        "comments": 385,
+        "shares": 505
+      },
+      "platforms": {
+        "tiktok": 433,
+        "instagram": 12,
+        "reddit": 19,
+        "pinterest": 10,
+        "x": 8
+      },
+      "weekly": [
+        105701,
+        86880,
+        16088,
+        87295,
+        4122
+      ],
+      "narratives": [
+        {
+          "label": "Skeleton Dials & Frosted Gold",
+          "description": "Bold aesthetics - double balance wheels, rainbow bezels, skeleton dials, frosted rose gold - dominate the conversation.",
+          "count": 339
+        },
+        {
+          "label": "High Complication Showcase",
+          "description": "Engineering marvels like the Perpetual Calendar and Concept GMT Tourbillon are the focus of dedicated craft content.",
+          "count": 249
+        },
+        {
+          "label": "Retail Listings & Unboxings",
+          "description": "Sellers and collectors share fresh stock, store locations and unboxing detail for new Royal Oak chronographs.",
+          "count": 208
+        },
+        {
+          "label": "Brand Heritage & Anniversaries",
+          "description": "The 1972 launch of the steel Royal Oak and its 50th-anniversary editions are a recurring reference point.",
+          "count": 202
+        },
+        {
+          "label": "Vintage Elegance & Complications",
+          "description": "Rare vintage pieces - the Jules Audemars Extra-Thin, the Disco Volante, yellow gold moonphases - surface regularly.",
+          "count": 105
+        }
+      ],
+      "whitespace": [
+        {
+          "tag": "toronto",
+          "premiumPct": 160.8
+        },
+        {
+          "tag": "lamborghini / mclaren",
+          "premiumPct": 150.4
+        },
+        {
+          "tag": "luxurycar / cargram",
+          "premiumPct": 150.4
+        },
+        {
+          "tag": "edutok",
+          "premiumPct": 142.6
+        },
+        {
+          "tag": "jewelrygram",
+          "premiumPct": 150.4
+        }
+      ],
+      "posts": [
+        {
+          "platform": "tiktok",
+          "description": "Unboxing of a Royal Oak Chronograph 41mm - AP's single biggest post of the pull.",
+          "views": 2748189,
+          "likes": 102658
+        },
+        {
+          "platform": "tiktok",
+          "description": "Dealer \"new arrival\" post: a 2017 Royal Oak 41mm with full box and papers.",
+          "views": 1170122,
+          "likes": 55242
+        },
+        {
+          "platform": "tiktok",
+          "description": "Craftsmanship showcase of the Royal Oak Skeleton Openworked ref. 15305ST.",
+          "views": 1163323,
+          "likes": 29447
+        }
+      ]
+    },
+    {
+      "id": "richard-mille",
+      "name": "Richard Mille",
+      "color": "#e0525c",
+      "metrics": {
+        "records": 330,
+        "views": 29326298,
+        "likes": 1020001,
+        "comments": 139,
+        "shares": 69
+      },
+      "platforms": {
+        "tiktok": 321,
+        "instagram": 3,
+        "reddit": 0,
+        "pinterest": 0,
+        "x": 6
+      },
+      "weekly": [
+        7665,
+        47729,
+        281487,
+        2137,
+        14
+      ],
+      "narratives": [
+        {
+          "label": "Limited Edition Technical Chronographs",
+          "description": "Highly complex limited-edition pieces with specialized mechanical complications for motorsport and soccer dominate volume.",
+          "count": 321
+        },
+        {
+          "label": "High Value Buying & Lifestyle",
+          "description": "Creators discuss the prestige, extreme pricing and security risk of owning multi-hundred-thousand-dollar timepieces.",
+          "count": 225
+        },
+        {
+          "label": "Celebrity Collections & Collaborations",
+          "description": "Ultra-expensive custom pieces worn by figures like Anant Ambani and Rafael Nadal get dedicated spotlight content.",
+          "count": 217
+        },
+        {
+          "label": "Secondary Market Value Evaluations",
+          "description": "Creators track resale pricing and technical detail on models endorsed by racing drivers and musicians.",
+          "count": 96
+        },
+        {
+          "label": "Formula One Driver Associations",
+          "description": "F1 drivers - Lando Norris, Charles Leclerc - wearing RM pieces during championship and podium moments.",
+          "count": 78
+        }
+      ],
+      "whitespace": [
+        {
+          "tag": "reklam",
+          "premiumPct": 161.2
+        },
+        {
+          "tag": "kinzylondon / hattongarden",
+          "premiumPct": 160.8
+        },
+        {
+          "tag": "londonwatches",
+          "premiumPct": 160.8
+        },
+        {
+          "tag": "toronto",
+          "premiumPct": 132.3
+        },
+        {
+          "tag": "relogios",
+          "premiumPct": 129.5
+        }
+      ],
+      "posts": [
+        {
+          "platform": "tiktok",
+          "description": "A musician (J Balvin) shown wearing a one-of-one Sapphire Blue Tourbillon - third-party creator content, not RM-owned.",
+          "views": 6161847,
+          "likes": 320238
+        },
+        {
+          "platform": "tiktok",
+          "description": "Third-party retelling of the Stallone RM 52-01 \"Tourbillon Skull\" auction story.",
+          "views": 2601442,
+          "likes": 72043
+        },
+        {
+          "platform": "tiktok",
+          "description": "A creator shown wearing the RM UP-01 Ferrari, noted as a nearly $2M piece.",
+          "views": 2460978,
+          "likes": 94715
+        }
+      ]
+    },
+    {
+      "id": "omega",
+      "name": "Omega",
+      "color": "#34b3ac",
+      "query": "Omega watches",
+      "metrics": {
+        "records": 441,
+        "views": 22875064,
+        "likes": 1077014,
+        "comments": 780,
+        "shares": 112
+      },
+      "platforms": {
+        "tiktok": 403,
+        "instagram": 15,
+        "reddit": 16,
+        "pinterest": 1,
+        "x": 6
+      },
+      "weekly": [
+        184857,
+        536158,
+        116467,
+        21718,
+        4770
+      ],
+      "narratives": [
+        {
+          "label": "Diver 300M Diving Heritage",
+          "description": "Enthusiasts showcase the engineering and robust utility of the Seamaster Diver line, heavily linked to Bond heritage.",
+          "count": 458
+        },
+        {
+          "label": "Five-Watch Collection Curation",
+          "description": "Creators build and pitch ideal five-watch collections built around classic Omega references for every occasion.",
+          "count": 421
+        },
+        {
+          "label": "Celebrity & Olympic Ambassadorship",
+          "description": "Daniel Craig, George Clooney and Olympic athletes surface regularly wearing Omega pieces in creator content.",
+          "count": 48
+        },
+        {
+          "label": "Styling & Maintenance Tips",
+          "description": "Reviews and short episodes cover how to buy, style, care for and verify authenticity of legacy pieces.",
+          "count": 4
+        }
+      ],
+      "whitespace": [
+        {
+          "tag": "finehourclub",
+          "premiumPct": 101.1
+        },
+        {
+          "tag": "sapphiresandwich",
+          "premiumPct": 100.2
+        },
+        {
+          "tag": "specialedition",
+          "premiumPct": 85.3
+        },
+        {
+          "tag": "toronto",
+          "premiumPct": 85.2
+        },
+        {
+          "tag": "edutok",
+          "premiumPct": 78.9
+        }
+      ],
+      "posts": [
+        {
+          "platform": "tiktok",
+          "description": "A Bond-themed presentation box tied to a 007 film anniversary - \"if Q gives you a box like that...\"",
+          "views": 2654000,
+          "likes": 176311
+        },
+        {
+          "platform": "tiktok",
+          "description": "The Moonswatch \"Moonshine Gold\" colorway drop, styled as a standout addition to the line.",
+          "views": 2239554,
+          "likes": 63033
+        },
+        {
+          "platform": "tiktok",
+          "description": "Unboxing of the Speedmaster \"Snoopy\" edition - box, loupe and case detail.",
+          "views": 930459,
+          "likes": 55234
+        }
+      ]
+    }
+  ]
+}

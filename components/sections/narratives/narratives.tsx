@@ -41,7 +41,7 @@ export function Narratives() {
   );
   const [refreshing, setRefreshing] = useState(false);
   const [statusLine, setStatusLine] = useState<StatusLine>({
-    text: `Deep snapshot · ${totalRecords.toLocaleString()} posts · pulled Jul 1, 2026`,
+    text: `Deep snapshot · ${totalRecords.toLocaleString()} posts`,
     variant: "idle",
   });
 
@@ -254,23 +254,20 @@ function summarizeRefresh(failed: number): StatusLine {
       variant: "error",
     };
   }
-  const houses = failed > 1 ? "houses" : "house";
+  const subjects = failed > 1 ? "subjects" : "subject";
   const those = failed > 1 ? "those" : "that one";
   return {
-    text: `Live · updated ${time} · ${failed} ${houses} failed, showing snapshot for ${those}`,
+    text: `Live · updated ${time} · ${failed} ${subjects} failed, showing snapshot for ${those}`,
     variant: "error",
   };
 }
 
-// Client-side poll budget. KINETK jobs finish in seconds to ~2 minutes; each
-// poll is its own short request, so no single request is ever held open.
 const POLL_INTERVAL_MS = 2500;
 const MAX_POLL_ATTEMPTS = 72;
 const MAX_TRANSIENT_FAILURES = 3;
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-/** Submit a live refresh, then poll until the job finishes. */
 async function fetchInsights(id: string): Promise<InsightsResult> {
   const jobId = await startInsightsJob(id);
   return pollInsightsJob(jobId);
@@ -310,7 +307,6 @@ async function pollInsightsJob(jobId: string): Promise<InsightsResult> {
       }
       state = (await response.json()) as InsightsJobState;
     } catch (error) {
-      // Tolerate the occasional dropped poll; give up after a few in a row.
       if (++transientFailures > MAX_TRANSIENT_FAILURES) throw error;
       continue;
     }
@@ -318,7 +314,6 @@ async function pollInsightsJob(jobId: string): Promise<InsightsResult> {
     transientFailures = 0;
     if (state.status === "succeeded") return state.result;
     if (state.status === "failed") throw new Error("KINETK job failed");
-    // "running" - keep polling.
   }
 
   throw new Error("KINETK job timed out");
