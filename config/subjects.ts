@@ -23,6 +23,7 @@ export interface TopicSubjects {
   subjects: Subject[];
   /** Trailing window for the pull. */
   window: "7d" | "30d" | "all";
+  /** Limit of records */
   limit: number;
 }
 
