@@ -23,14 +23,13 @@ export interface TopicSubjects {
   subjects: Subject[];
   /** Trailing window for the pull. */
   window: "7d" | "30d" | "all";
-  /** Records to sample per subject (500-3000). More = richer but slower. */
   limit: number;
 }
 
 export const TOPICS: Record<string, TopicSubjects> = {
   watches: {
     window: "30d",
-    limit: 500,
+    limit: 2500,
     subjects: [
       { query: "Rolex watches", name: "Rolex", color: "#cba135" },
       { query: "Patek Philippe", color: "#4c8a6e" },
