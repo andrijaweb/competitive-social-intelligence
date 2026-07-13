@@ -64,6 +64,12 @@ the endpoint per workspace - optional, defaults to the public graph.)
 A few small files hold everything you would change. The UI reads from them - you
 should not need to edit the components.
 
+> **Prefer to hand it off?** Everything below is agent-friendly. Open this repo
+> (or paste this README) in Claude Code, Codex or a similar coding agent and it
+> can run the whole setup for you - branding, subjects, the pull - and it will
+> offer to write the per-subject playbooks from your freshly pulled data. The
+> conventions it follows live in [AGENTS.md](AGENTS.md).
+
 ### 1. Branding - [config/brand.ts](config/brand.ts)
 
 This is the single place for your identity:
@@ -138,15 +144,39 @@ To point the dashboard at your own competitive set:
    renders with no edits here. To override, add an entry keyed by your topic with
    **only** the fields worth changing - a sharper headline, or hand-written
    `playbooks`. Copy tokens `{brand}`, `{subjects}` and `{platforms}` are filled
-   in from the active dataset at render time. `playbooks` are keyed by subject id
-   (a slug of the name, e.g. `patek-philippe`): write one to hand-author the
-   analysis, or leave a subject out and the page renders a plain, no-LLM summary
-   built from that subject's own numbers.
+   in from the active dataset at render time. The `playbooks` - the one piece
+   that reads like real analysis - get their own step below.
 
 The aggregate metrics - engagement score, share of voice, comments-per-post -
 are **derived** in [lib/metrics.ts](lib/metrics.ts) from the raw counts, so they
 can never fall out of sync. Adjust `ENGAGEMENT_WEIGHTS` there to change how the
 score is weighted.
+
+### 4. Write the playbooks - the one LLM step
+
+Three tiers of content feed the page, and only the last one needs a writer:
+
+1. **Numbers** - engagement metrics, pulled into `data/<topic>.json`. No model.
+2. **Insights** - the clustered narratives and whitespace tags in section 06,
+   straight from KINETK into the same file. Still no model.
+3. **Playbooks** - the per-subject `headline` / `drivers` / `counters` / `caveat`
+   in [config/content.ts](config/content.ts). This is the only piece that reads
+   the numbers *and* the insights and turns them into an argument, so it's the
+   one part an LLM (or you) actually writes.
+
+You don't have to write them. Any subject without an authored playbook renders a
+plain, no-LLM summary built from its own numbers (`fallbackPlaybook` in
+[lib/data.ts](lib/data.ts)), so the page is complete either way.
+
+For the richer version, hand it to a coding agent: with `data/<topic>.json`
+freshly pulled, open the repo in Claude Code, Codex or similar and ask it to
+write the playbooks. It has everything it needs - the pulled data, the shipped
+`watches` playbooks as a style example, and the `Playbook` shape in
+[lib/types.ts](lib/types.ts) - and [AGENTS.md](AGENTS.md) tells it exactly how.
+
+One caveat: playbooks cite hard numbers ("2,500 records", "18.4% share"), so a
+re-pull makes them stale. Re-run this step - or just ask the agent to refresh
+them - after each pull.
 
 ## Optional: live refresh
 
