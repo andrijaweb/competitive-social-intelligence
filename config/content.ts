@@ -31,7 +31,7 @@ import type { BaseContent, TopicContent } from "@/lib/types";
  */
 export const DEFAULT_CONTENT: BaseContent = {
   masthead: {
-    eyebrow: "{brand} · Social Intelligence · Trailing 30 Days",
+    eyebrow: "{brand} · Competitive Social Intelligence · Trailing 30 Days",
     headline: {
       lead: "The full field, one view.",
       emphasis: "Who's actually winning the room -",
@@ -89,7 +89,7 @@ export const DEFAULT_CONTENT: BaseContent = {
 export const CONTENT: Record<string, Partial<TopicContent>> = {
   watches: {
     masthead: {
-      eyebrow: "{brand} · Social Intelligence · Trailing 30 Days",
+      eyebrow: "{brand} · Competitive Social Intelligence · Trailing 30 Days",
       headline: {
         lead: "Five houses, one dial.",
         emphasis: "Who's actually winning the room -",

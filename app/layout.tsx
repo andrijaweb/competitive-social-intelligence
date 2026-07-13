@@ -25,7 +25,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${brand.name} - Social Intelligence`,
+  title: `${brand.name} - Competitive Social Intelligence`,
   description: `Competitive social intelligence dashboard by ${brand.name}.`,
 };
 

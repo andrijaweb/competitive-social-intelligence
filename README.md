@@ -1,6 +1,6 @@
-# Calibre - Social Intelligence Dashboard
+# Calibre - Competitive Social Intelligence Dashboard
 
-A single-page, fully data-driven social intelligence dashboard built with
+A single-page, fully data-driven competitive social intelligence dashboard built with
 Next.js (App Router) and React. It reads a competitive set of subjects and
 renders share of voice, a weekly engagement trend, a per-subject playbook,
 summary metrics and auto-clustered content narratives - with an optional live
