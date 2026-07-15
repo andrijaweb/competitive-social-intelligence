@@ -4,7 +4,9 @@ A single-page, fully data-driven competitive social intelligence dashboard built
 Next.js (App Router) and React. It reads a competitive set of subjects and
 renders share of voice, a weekly engagement trend, a per-subject playbook,
 summary metrics and auto-clustered content narratives - with an optional live
-refresh straight from the KINETK graph over MCP.
+refresh straight from the KINETK graph over its REST API.
+
+**Live demo:** [calibre-demo.kinetk.ai](https://calibre-demo.kinetk.ai)
 
 It ships as a template. The numbers are **pulled** from KINETK into a JSON file,
 the words are **authored** in a config file, and the branding lives in a third -
@@ -18,7 +20,7 @@ Download the template and install its dependencies in one step (`--install`
 runs the package manager for you):
 
 ```bash
-npx giget@latest gh:andrijaweb/competitive-social-intelligence my-dashboard --install
+npx giget@latest gh:kinetk/api-docs-knowledge-graph/examples/competitive-social-intelligence#main my-dashboard --install
 ```
 
 Then run the dev server:
@@ -55,9 +57,9 @@ KINETK_API_KEY=sk-...        # from https://platform.kinetk.ai
 ```
 
 `.env.local` is gitignored, so your key is never committed. Get the key from
-[platform.kinetk.ai](https://platform.kinetk.ai); it is sent to the KINETK MCP
-endpoint as the `x-api-key` header. (Advanced: set `KINETK_MCP_URL` to override
-the endpoint per workspace - optional, defaults to the public graph.)
+[platform.kinetk.ai](https://platform.kinetk.ai); it is sent to the KINETK REST
+API as the `x-api-key` header. (Advanced: set `KINETK_API_BASE` to override the
+endpoint per workspace - optional, defaults to the public graph.)
 
 ## Make it yours
 
@@ -182,8 +184,8 @@ them - after each pull.
 
 Section 06 has a "Refresh live from KINETK" button. It calls the
 `app/api/insights/*` route handlers ([start](app/api/insights/start/route.ts) +
-[status](app/api/insights/status/route.ts)), which open an MCP connection to the
-KINETK graph, pull fresh `insights` for one subject, and map the structured
+[status](app/api/insights/status/route.ts)), which call the KINETK graph's REST
+job API, pull fresh `insights` for one subject, and map the structured
 narratives and tag signals into the section. The job runs as a short async
 poll loop so no single request is held open. No model is involved - the
 summaries come straight from KINETK. Your key stays on the server.
@@ -225,7 +227,7 @@ scripts/
 lib/
   data.ts                   Merges pulled numbers + authored words for the active topic
   pull-core.ts              Shapes raw KINETK results into a dataset (used by the pull)
-  kinetk.ts                 Server-side MCP client for the live refresh
+  kinetk.ts                 KINETK REST client + live-refresh insight shaping
   metrics.ts                Derived metrics (score, share of voice)
   format.ts                 Number and label formatting
   types.ts                  Domain types

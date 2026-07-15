@@ -141,82 +141,82 @@ export const CONTENT: Record<string, Partial<TopicContent>> = {
     playbooks: {
       rolex: {
         headline:
-          `Slips to #2 at 2,500 records - the second-most views of any house, but the weakest conversation (28.8 comments/post, lowest of the five).`,
+          `The period's biggest faller - now dead last at 10.1% share, and #5 on every single metric.`,
         drivers: [
-          `18.4% share of voice - second to Richard Mille and effectively tied with Omega (18.3%). Rolex pulls the second-highest view count (124M) yet the lowest likes (11.5M) and lowest comments-per-post (28.8) here: heavy passive reach, comparatively little engagement per post.`,
-          `Its base is genuinely broad and model-driven - five well-distributed clusters with no single dominant theme: "Diverse Rolex Models" (173 posts), "Vintage Day-Date 36" (166), "Submariner collector culture" (121), "GMT-Master styles" (112) and "Daytona John Mayer" (110).`,
-          `Its biggest posts are off-topic viral bleed-through, not Rolex campaigns: a "luxury diaper" meme (9.1M views, ~7% of Rolex's views and shared across all five houses) and an epoxy-floor clip (2.6M). The one on-brand hit is a watch-styling "perfect couples set" (8.6M). Whitespace points to #johnmayerdaytona (+77%) and Zenith cross-shopping (#zenith +49%).`,
+          `Last across the board: 10.1% share of voice, and rock-bottom on views (267.8M), likes (36.1M), comments (415K), shares (2.1M) and conversation (138.5 comments/post). Omega (34.3%) now outweighs Rolex more than three to one.`,
+          `Its content skews gifting and acquisition over product: "Rolex Gifts And Collections" (86 posts), "First Rolex Purchases" (86, often tied to crypto profits), "Watch Sales And Giveaways" (70), "Yacht-Master auction & invitations" (62) and "Vintage & Gold styles" (61 - Pepsi, Explorer, Batman, GMT).`,
+          `Unusually its single biggest post is on-topic - an influencer gifting Rolexes to Mexico players after a bet (19.6M views) - but the rest is bleed-through. Whitespace hands it the strongest open lane in the whole dataset: #insaneluxury (+78.7%), plus timely #wimbledon (+36.9%) and cross-shopping #seiko (+33.1%).`,
         ],
         counters: [
-          `Rolex's soft spot is conversation - most reach, least discussion per post. A reply-bait format (rankings, hot takes, "which one wins") is where it's most beatable.`,
-          `The highest-premium open tags in its audience - #258chronoco (+106%) and #johnmayerdaytona (+77%) - are largely unclaimed and cheap to test first.`,
-          `The "perfect couples set" styling format clearly resonated (8.6M views) and is easy to copy - run a version against your own catalog.`,
+          `Rolex is beatable everywhere this period - last on reach AND conversation - so the opening is category-wide, not a single soft spot.`,
+          `Its one genuinely open, high-premium tag, #insaneluxury (+78.7%), is the highest-premium tag in the entire dataset and cheap to test first.`,
+          `The timely #wimbledon premium (+36.9%) shows event-tied content lands for its audience - a calendar/event hook is a low-cost way to contest the space Rolex is vacating.`,
         ],
         caveat:
-          `Two of Rolex's three biggest posts (a luxury-diaper meme and an epoxy-floor clip) aren't Rolex content at all, and that diaper clip shows up in every house's top three. Read its position as reach-heavy and conversation-light, not broad brand momentum.`,
+          `Part of Rolex's counted sample isn't Rolex: its "Watch Sales And Giveaways" cluster (70 posts) folds in G-Shock, Fossil and AP, and its #2 post is the same "NOOOOO" clip that also tops AP's and Richard Mille's lists. The last-place finish is real, but a slice of the base is off-brand bleed-through.`,
       },
       "patek-philippe": {
         headline:
-          `Still last by engagement (17.1%) - but only just, and it quietly runs the second-strongest conversation of the five.`,
+          `Fourth on engagement (15.3%) but first on identity - the only house with a genuinely model-rich, on-brand narrative set.`,
         drivers: [
-          `Lowest share of voice at 17.1%, yet only fractionally behind AP (17.4%) and Omega (18.3%) - "smallest footprint" is now a hair, not a gap. It over-delivers on conversation: 50.1 comments-per-post, second only to Richard Mille.`,
-          `Content is heavily Nautilus-concentrated - its three surfaced clusters are "Nautilus gold models" (109 posts), the steel-blue "Nautilus 5711/1A-010" (86) and general "craftsmanship & quality" (78). Fewer distinct themes than any other house.`,
-          `No Patek-specific post cracked its own top three - all three are cross-brand virals (the 9.1M diaper clip, a 2.8M pet clip, a 2.6M epoxy-floor clip). Its engagement is broad and steady rather than driven by a breakout moment. Whitespace leans enthusiast: #watchnerd (+70%), #watchgeek (+52%).`,
+          `15.3% share of voice, #4 - 2.5 points behind AP and 5.2 clear of last-place Rolex. Bottom-half on reach (398.1M views) and conversation (176.5 comments/post, #4). On the raw numbers, a quiet performer.`,
+          `But it has the most on-brand, model-specific narrative set of the five, where rivals recycle one icon: "Perpetual Calendar" (41 posts, incl. Zuckerberg's vintage Ref. 1526J), "Patek vs. Audemars comparisons" (37), "Vintage Calatrava" (36), "Aquanaut as investment" (30) and "Grand Complications" (28).`,
+          `No viral is carrying it - its top posts are all off-topic (an "Outfit check" clip at 15.7M, a Japanese-actress dress clip at 13.4M) - which makes the steady mid-pack showing more organic than flattered. Whitespace is thin, though: only #davidoffbrothers (+27.5%) and #audemarspiguet (+19%) pay real premium, while its own #pateknautilus (+8.7%) and #vintagepatek (+0.1%) are nearly flat.`,
         ],
         counters: [
-          `Patek is the most exposed house on raw reach - it has no viral hit carrying it, so simply publishing more breakout-friendly content in its Nautilus lane closes real ground fast.`,
-          `The enthusiast tags its audience over-indexes on (#watchnerd +70%, #watchgeek +52%) are wide open - a specs/collector-depth series meets that audience where it already leans.`,
-          `Its Nautilus-vs-Nautilus comparison format (steel 5711 vs. gold references) is cheap to replicate against your own catalog.`,
-        ],
-        caveat:
-          `Everyone except Richard Mille sits within 1.3 points of share of voice (18.4% down to 17.1%) - the bottom four are effectively a four-way tie, so Patek's "last place" is noise, not a real gap this period.`,
-      },
-      "audemars-piguet": {
-        headline:
-          `Mid-pack and Royal Oak-bound - but it has the one thing Patek lacks: a genuinely on-brand top post.`,
-        drivers: [
-          `17.4% share of voice, fourth of five and tightly bunched with Omega and Patek. Middle-of-the-pack on conversation too (44.6 comments-per-post).`,
-          `Content is almost entirely Royal Oak / hashtag-cluster driven - its narrative clusters are all #audemarspiguet + #royaloak tag groupings (122, 107 and 101 posts), with little thematic variety beyond the Royal Oak itself.`,
-          `Unlike Patek, AP has a clearly on-brand top post - a "Royal Oak Chronograph 41mm unboxing" (2.75M views) - sitting alongside the same cross-brand virals everyone has (the 9.1M diaper clip, a 2.8M pet clip). Whitespace is enthusiast/regional: #horlogerie (+51%), #instawatch (+46%), #ukwatchcollection (+45%).`,
-        ],
-        counters: [
-          `AP leans on a single icon, the Royal Oak. A house with more model range can out-cover it simply by showing breadth AP structurally can't.`,
-          `The unboxing is AP's one native hit and cheap for anyone to produce - match the format directly against your own references.`,
-          `#horlogerie (+51%) and #instawatch (+46%) are the open, higher-premium tags in its audience and underused by AP itself.`,
+          `Patek is the most exposed house on raw reach - no viral props it up - so it closes ground simply by making its already-rich model lanes (Perpetual Calendar, Calatrava, Aquanaut) more breakout-friendly.`,
+          `Its strongest owned tag, #pateknautilus, pays almost nothing (+8.7%) - the demand lives in the model content, not the hashtag, so lead with the reference, not the tag.`,
+          `The "Patek vs. Audemars" comparison format (37 posts) is a proven, cheap-to-replicate lane - run your own catalog against a named rival.`,
         ],
         caveat: null,
       },
-      "richard-mille": {
+      "audemars-piguet": {
         headline:
-          `The new clear #1 at this depth - 28.8% share of voice, and the highest conversation rate of the five too.`,
+          `A steady #3 (17.8%) that quietly ranks #2 on shares - but its own Royal Oak tags are running negative premium.`,
         drivers: [
-          `Runs away with it: 28.8% share of voice, a full 10 points clear of #2 (Rolex, 18.4%). It leads on both reach (179M views, most of any house) and conversation (56.5 comments-per-post, highest here) - the old "reach without discussion" read no longer holds.`,
-          `Its narrative base is genuinely RM-specific: "RM67-02" (140 posts), "RM collection" showcases (99), "RM11-03 sales" (92), the "Bubba Watson RM-055" (70) and "limited-edition RM11-02 Le Mans" (50) - real model-level distribution, not one recycled clip.`,
-          `But its two biggest posts aren't Richard Mille at all - they're Jacob & Co Bugatti Chiron jeweled watches (20.4M and 15.7M views), off-brand luxury bleed-through that together are ~20% of RM's entire view count. Whitespace is celebrity/aspiration-coded: #sylvesterstallone, #millionaire and #vacheronconstantin all at +108%.`,
+          `17.8% share of voice, a clear #3 - 4.6 points behind Richard Mille and 2.5 ahead of Patek. Middle of the pack on views (450.4M) and conversation (245.4 comments/post, #3), but #2 of five on shares (4.3M) - a more spread-friendly profile than its rank suggests.`,
+          `Content is Royal-Oak-concentrated with a viral hook: "Royal Oak Frosted Gold" (39 posts) and "Rare Royal Oak Editions" (21), plus the "WatchDotFun Tool" cluster (44) - a watch-alter-ego tool doing the rounds and its single biggest theme, barely about AP at all.`,
+          `Its whitespace is a warning, not an opportunity: four of five tags carry NEGATIVE engagement premium - #royaloak (-26.5%), #royaloakchronograph (-19.8%), #audemarspiguet (-9.6%) and #vintagewatch (-3.3%). Only #audemarspiguetroyaloak (+25.1%) still pays. AP's core tags are saturated.`,
         ],
         counters: [
-          `RM's lead is real but partly borrowed - study the mechanism, not the number. Its momentum runs on third-party creators and celebrity/HNW pieces shown off on personal accounts; that's seedable through relationships and gifting, not buyable like a media plan.`,
-          `Its top-of-funnel is dominated by other brands' viral watches (Jacob & Co Bugatti) - a house with genuinely owned viral content can claim that "insane jeweled watch" lane instead of ceding it to bleed-through.`,
-          `The celebrity/net-worth tags carrying its audience (#sylvesterstallone, #millionaire, +108%) point to aspiration content any house can produce - RM benefits from that lane but doesn't own it.`,
+          `AP leans on one icon and four of its five core tags are negative-premium, so out-covering it is a matter of range - show model breadth it structurally can't.`,
+          `Its single biggest theme (the WatchDotFun tool, 44 posts) is a borrowed viral, not AP content - an owned interactive/tool format is cheap to build and claims that engagement directly.`,
+          `The only tag still paying AP a premium is the narrow #audemarspiguetroyaloak (+25.1%); its broad tags are crowded, so a differentiated lane beats competing on #royaloak head-on.`,
         ],
         caveat:
-          `RM's view lead is inflated by off-brand content: its two biggest posts are Jacob & Co Bugatti pieces, not Richard Mille, and account for roughly a fifth of its views. The RM-specific base underneath is real, but treat the raw #1 as flattered by luxury-watch bleed-through.`,
+          `AP's biggest post by far - an off-topic "🥹🇦🇷" clip at 43.5M views, the single largest post in the entire dataset - is viral bleed-through, not AP content. Its mid-pack reach is propped up by one unrelated viral; the Royal Oak base underneath is narrower than the raw views suggest.`,
+      },
+      "richard-mille": {
+        headline:
+          `Slips to #2 on share of voice (22.4%) but owns the conversation outright - 625.5 comments/post, more than double any other house.`,
+        drivers: [
+          `22.4% share of voice, a clear #2 behind Omega (34.3%) and 4.6 points ahead of #3 AP. But it runs away with conversation: 1.88M comments (most of any house) and 625.5 comments-per-post - more than double #2 Omega's 278.7 and roughly 4.5x last-place Rolex.`,
+          `A celebrity-driven base: "Celebrity Richard Mille Sightings" (40 posts - Kylian Mbappé, Omar Sy), "Luxury Watch Brand Appreciation" (30 - Franck Muller, Hublot) and "Showcasing Richard Mille Watches" (23 - #rm3001, #watchcollector). Its pull runs on famous wrists, not catalog content.`,
+          `It converses but doesn't spread - just 2.8M shares (#4, second-lowest) despite the huge comment volume. Its top posts are off-topic bleed-through (a Cristiano Ronaldo retirement rumor at 14.6M, the cross-house "NOOOOO" clip at 12.3M), and its whitespace is cross-brand: #reverso, #jaegerlecoultre and #omarsy all at +57%, pointing at JLC cross-shopping and the Omar Sy association rather than RM-owned tags.`,
+        ],
+        counters: [
+          `RM's engine is celebrity/athlete sightings seeded through third parties - reachable via relationships and gifting, not a media buy. A house with its own celebrity relationships can contest the same lane.`,
+          `It converses but doesn't spread (most comments, #4 on shares) - share-optimized formats (clippable, ranking/list content) are exactly where RM structurally underperforms.`,
+          `Its highest-premium open tags are competitors' (#jaegerlecoultre, #reverso at +57%) and a celebrity name (#omarsy +57%) - the "luxury watch on a famous wrist" format is unclaimed territory any house can produce.`,
+        ],
+        caveat:
+          `RM's conversation lead is real - 1.88M comments is no artifact - but its share-of-voice reach is padded by off-brand virals: its three biggest posts are a football-retirement rumor and cross-house meme clips, none of them Richard Mille content.`,
       },
       omega: {
         headline:
-          `Holds #3 on the most coherent, on-brand content set of the five - Speedmaster, Seamaster and Bond.`,
+          `The new runaway #1 - 34.3% share of voice, ~12 points clear, and the only house leading views, likes and shares at once.`,
         drivers: [
-          `18.3% share of voice, third and effectively tied with Rolex (18.4%) - but on a healthier mix: 46.9 comments-per-post against Rolex's 28.8 on comparable reach.`,
-          `The richest, most model-specific narrative set here - four deep, distinct heritage lanes where rivals mostly have hashtag clusters: "The Beauty of Omega" (171 posts), "Speedmaster Chronograph" (126), "Seamaster Diver 300M" (115) and "Speedmaster Moonwatch heritage" (106).`,
-          `Its whitespace is unusually on-brand and coherent - #bond (+68%), #goldwatch (+68%), #seamasterdiver300m (+68%), #danielcraig (+59%) - and it has a genuinely owned top post, the 007 50th-anniversary presentation-box set (2.65M views), not just bleed-through.`,
+          `Dominant on raw engagement: 34.3% share of voice, roughly 12 points clear of #2 Richard Mille (22.4%). It leads views (838.4M, far more than any other house), likes (121.8M) and shares (15.8M - nearly four times the next house). No rival tops more than one of those.`,
+          `Its narrative base is genuinely Omega-specific and model-rich - five distinct heritage lanes: "Omega Speedmaster Enthusiasts" (55 posts), "Vintage Omega Constellation" (45) and "Seamaster Aqua Terra" (44), plus broader "Luxury Watch Status Symbol" (63) and "Luxury Watch Collections" (50).`,
+          `But its three biggest posts are off-topic viral bleed-through, not Omega content - a Japanese food creator (19.9M views), a "dad effect" family clip (18.2M) and a Messi football clip (17.4M). Its whitespace is entirely Seiko-Presage-coded (#presage, #seikopresage, #6r51 all +66.4%) - an affordable-automatic cross-shopping audience Omega doesn't own.`,
         ],
         counters: [
-          `Omega's edge is a tight story-to-tag fit (Bond / Seamaster / Speedmaster) that's hard to attack head-on. The move is to pick a heritage lane it doesn't own and go as deep as it goes on Speedmaster.`,
-          `The Bond / #danielcraig association does real work (+59-68% premiums) - you can't copy Bond, but the "cinematic heritage moment" format behind it is reusable.`,
-          `Its Seamaster Diver 300M content (115 posts, +68% tag premium) is the most repeatable, creator-friendly lane - test the dive-heritage format against your own catalog.`,
+          `Omega's lead is reach-driven but its flagship posts are bleed-through - study the model content, not the number. It wins on Speedmaster/Seamaster/Constellation depth, so pick a heritage lane it doesn't own and go as deep as it goes.`,
+          `It's #1 on reach but only #2 on conversation (278.7 comments/post vs Richard Mille's 625.5) - a reply-bait/debate format is where even the leader is soft.`,
+          `The high-premium open tags around its audience are Seiko Presage (#presage, #seikopresage at +66.4%) - an affordable-automatic lane wide open and cheap to test, and one Omega itself isn't claiming.`,
         ],
         caveat:
-          `The "highest comments-per-post" crown Omega held at shallower pulls is gone at 2,500 records - Richard Mille (56.5) and Patek (50.1) now both out-converse it (46.9). Its strength here is content coherence, not a conversation lead.`,
+          `Omega's #1 is genuine on aggregate engagement, but all three of its biggest posts are off-topic virals (a food creator, a family clip, a football clip), so the 838M view count is flattered by bleed-through. The Seiko-Presage whitespace reflects cross-shopping, not Omega-owned demand.`,
       },
     },
   },

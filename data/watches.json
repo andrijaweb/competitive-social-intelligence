@@ -1,13 +1,13 @@
 {
   "topic": "watches",
-  "generatedAt": "2026-07-12T13:27:24.259Z",
+  "generatedAt": "2026-07-15T15:47:31.101Z",
   "window": "30d",
   "weekLabels": [
-    "Jun 12-17",
-    "Jun 18-23",
-    "Jun 24-29",
-    "Jun 30-Jul 5",
-    "Jul 6-11"
+    "Jun 15-20",
+    "Jun 21-26",
+    "Jun 27-Jul 2",
+    "Jul 3-8",
+    "Jul 9-14"
   ],
   "entities": [
     {
@@ -16,93 +16,93 @@
       "color": "#cba135",
       "query": "Rolex watches",
       "metrics": {
-        "records": 2500,
-        "views": 124302698,
-        "likes": 11526681,
-        "comments": 71964,
-        "shares": 1054185
+        "records": 3000,
+        "views": 267771711,
+        "likes": 36076277,
+        "comments": 415431,
+        "shares": 2123847
       },
       "platforms": {
-        "tiktok": 1821,
-        "instagram": 263,
-        "x": 13,
-        "reddit": 376,
-        "pinterest": 27
+        "tiktok": 762,
+        "instagram": 993,
+        "x": 456,
+        "reddit": 768,
+        "pinterest": 21
       },
       "weekly": [
-        672617,
-        19249115,
-        9719550,
-        7463422,
-        48405229
+        13630313,
+        49203734,
+        124715780,
+        140962829,
+        66555817
       ],
       "narratives": [
         {
-          "label": "Diverse Rolex Models",
-          "description": "Content presents a variety of Rolex models including the Explorer II \"Polar\" dial, rare British-market Oyster Perpetual Date, and classic Datejust designs.",
-          "count": 173
+          "label": "Rolex Gifts And Collections",
+          "description": "Creators are showcasing their luxury watch collections, including Rolex and Richard Mille, and discussing instances of influencers gifting Rolex watches.",
+          "count": 86
         },
         {
-          "label": "Vintage Rolex Day-Date 36",
-          "description": "Content features the vintage Rolex Day-Date 36mm in 18k yellow gold with a classic Champagne Roman dial, celebrating its heritage and timeless appeal.",
-          "count": 166
+          "label": "First Rolex Purchases",
+          "description": "Creators are sharing their excitement about buying their first Rolex watches, including Datejust and Bubbleback models, often linking the purchase to cryptocurrency profits.",
+          "count": 86
         },
         {
-          "label": "Rolex Submariner Collector Culture",
-          "description": "Creators share their passion for Rolex Submariner watches, discussing vintage vs. modern pieces and personal collecting experiences among watch enthusiasts.",
-          "count": 121
+          "label": "Watch Sales And Giveaways",
+          "description": "The cluster discusses discounts on G-Shock and Fossil watches, as well as giveaways and promotions involving Audemars Piguet and other luxury items.",
+          "count": 70
         },
         {
-          "label": "Rolex GMT-Master Styles",
-          "description": "Posts discuss various Rolex GMT-Master models, including the GMT Master 2, \"Zombie GMT,\" and \"Bruce Wayne,\" often comparing them to other popular editions.",
-          "count": 112
+          "label": "Rolex Yacht-Master And Invitations",
+          "description": "Creators are discussing the auction of a Rolex Yacht-Master II from India's Toshakhana and promoting campaigns where invitations can lead to winning a Rolex watch.",
+          "count": 62
         },
         {
-          "label": "Rolex Daytona John Mayer",
-          "description": "Content highlights the Rolex Cosmograph Daytona 116508 \"John Mayer\" edition, an 18k yellow gold model with a distinctive green dial, as a highly sought-after collector's item.",
-          "count": 110
+          "label": "Vintage And Gold Rolex Styles",
+          "description": "Creators are sharing their vintage Rolex Pepsi, Explorer, Batman, and GMT watches, often featuring gold tones and celebrating the 4th of July.",
+          "count": 61
         }
       ],
       "whitespace": [
         {
-          "tag": "258chronoco",
-          "premiumPct": 105.9
+          "tag": "rolexwatch",
+          "premiumPct": 27
         },
         {
-          "tag": "johnmayerdaytona",
-          "premiumPct": 76.6
+          "tag": "watch",
+          "premiumPct": 26
         },
         {
-          "tag": "zenith",
-          "premiumPct": 48.5
+          "tag": "insaneluxury",
+          "premiumPct": 78.7
         },
         {
-          "tag": "zenithchronomaster",
-          "premiumPct": 48.5
+          "tag": "seiko",
+          "premiumPct": 33.1
         },
         {
-          "tag": "watchcharts",
-          "premiumPct": 48.5
+          "tag": "wimbledon",
+          "premiumPct": 36.9
         }
       ],
       "posts": [
         {
           "platform": "tiktok",
-          "description": "Последний мой люксовый памперс 🤣 10/10……………………………………… Если бы Louis Vuitton делали diapers 🤣",
-          "views": 9100000,
-          "likes": 408900
+          "description": ". Influencer estadounidense regaló relojes Rolex a jugadores de México tras ganar una apuesta por su triunfo ante Ecuador.",
+          "views": 19600000,
+          "likes": 2100000
         },
         {
           "platform": "tiktok",
-          "description": "The perfect couples set 🩷🤎",
-          "views": 8623731,
-          "likes": 225767
+          "description": "🇧🇷💔 NOOOOO @Arthur Lima @AugustoGimenez",
+          "views": 12300000,
+          "likes": 1900000
         },
         {
-          "platform": "tiktok",
-          "description": "💚 Emerald Green Luxury Epoxy Floor 😍✨ Wait for the final reveal! Follow Luxury Structural Design for more satisfying luxury transformations.@luxury.structural1",
-          "views": 2600000,
-          "likes": 67400
+          "platform": "x",
+          "description": "Hey @grok, put a clown hat on the most overrated player. 🤡 https://t.co/UcC7rRz2fu",
+          "views": 8715739,
+          "likes": 6591
         }
       ]
     },
@@ -112,83 +112,93 @@
       "color": "#4c8a6e",
       "query": "Patek Philippe",
       "metrics": {
-        "records": 2500,
-        "views": 90207592,
-        "likes": 17070336,
-        "comments": 125369,
-        "shares": 1627231
+        "records": 3000,
+        "views": 398149033,
+        "likes": 57223691,
+        "comments": 529574,
+        "shares": 3102813
       },
       "platforms": {
-        "tiktok": 1807,
-        "instagram": 283,
-        "x": 22,
-        "reddit": 363,
-        "pinterest": 25
+        "tiktok": 684,
+        "instagram": 1272,
+        "x": 733,
+        "reddit": 284,
+        "pinterest": 27
       },
       "weekly": [
-        894992,
-        19230072,
-        10330164,
-        6962194,
-        101849273
+        69708895,
+        95138240,
+        97994619,
+        198987332,
+        135461394
       ],
       "narratives": [
         {
-          "label": "Showcasing Nautilus Gold Watches",
-          "description": "Creators highlight the luxurious Patek Philippe Nautilus, often focusing on gold models, with discussions around their high cost and aesthetic appeal.",
-          "count": 109
+          "label": "Patek Philippe Perpetual Calendar",
+          "description": "Creators are admiring the Patek Philippe Perpetual Calendar, including vintage Ref. 1526J, often spotted on notable figures like Meta CEO Mark Zuckerberg.",
+          "count": 41
         },
         {
-          "label": "Iconic Nautilus 5711/1A-010",
-          "description": "This cluster focuses on the iconic Patek Philippe Nautilus ref 5711/1A-010 in stainless steel with a blue dial, showcasing its design.",
-          "count": 86
+          "label": "Patek Philippe and Audemars Comparisons",
+          "description": "Creators share images and discussions comparing Patek Philippe watches with models from Audemars Piguet, particularly the Royal Oak.",
+          "count": 37
         },
         {
-          "label": "Patek Philippe Craftsmanship And Quality",
-          "description": "Creators emphasize the meticulous craftsmanship behind Patek Philippe watches, presenting various models like the Nautilus and Aquanaut as highly desired luxury timepieces.",
-          "count": 78
+          "label": "Vintage Patek Philippe Calatrava",
+          "description": "This cluster features vintage Patek Philippe Calatrava models, including museum pieces and those appearing in auctions or on specialized watch sites like Wind Vintage.",
+          "count": 36
+        },
+        {
+          "label": "Patek Aquanaut As Investment",
+          "description": "Creators discuss the Patek Philippe Aquanaut, with some viewing it as an investment or a status symbol to 'flex' in various settings.",
+          "count": 30
+        },
+        {
+          "label": "Patek Philippe Grand Complications",
+          "description": "Creators showcase the Patek Philippe Grand Complication Celestial and other luxury watches, emphasizing their artistic design and exclusivity.",
+          "count": 28
         }
       ],
       "whitespace": [
         {
-          "tag": "rose",
-          "premiumPct": 74.1
+          "tag": "davidoffbrothers",
+          "premiumPct": 27.5
         },
         {
-          "tag": "fypage",
-          "premiumPct": 67.3
+          "tag": "audemarspiguet",
+          "premiumPct": 19
         },
         {
-          "tag": "watchnerd",
-          "premiumPct": 70.3
+          "tag": "pateknautilus",
+          "premiumPct": 8.7
         },
         {
-          "tag": "usa",
-          "premiumPct": 51.2
+          "tag": "watchfam",
+          "premiumPct": 7.5
         },
         {
-          "tag": "watchgeek",
-          "premiumPct": 51.9
+          "tag": "vintagepatek",
+          "premiumPct": 0.1
         }
       ],
       "posts": [
         {
           "platform": "tiktok",
-          "description": "Последний мой люксовый памперс 🤣 10/10……………………………………… Если бы Louis Vuitton делали diapers 🤣",
-          "views": 9100000,
-          "likes": 408900
+          "description": "Outfit check 😍",
+          "views": 15700000,
+          "likes": 2300000
+        },
+        {
+          "platform": "x",
+          "description": "【衝撃】女優・北川景子(39) がボディスーツみたいなドレスを披露→ツキノワグマに見えると話題に！ この姿に「こんなドレス着こなせねぇ。」などの声が寄せられる。 これで2児の母ってなんなん？w https://t.co/FNaSsezge0",
+          "views": 13436699,
+          "likes": 3517
         },
         {
           "platform": "tiktok",
-          "description": "Raising you is my greatest privilege 🥰🐾❤️.",
-          "views": 2800000,
-          "likes": 601700
-        },
-        {
-          "platform": "tiktok",
-          "description": "💚 Emerald Green Luxury Epoxy Floor 😍✨ Wait for the final reveal! Follow Luxury Structural Design for more satisfying luxury transformations.@luxury.structural1",
-          "views": 2600000,
-          "likes": 67400
+          "description": "hit the scuba at show during",
+          "views": 7500000,
+          "likes": 1400000
         }
       ]
     },
@@ -198,93 +208,83 @@
       "color": "#6683f5",
       "query": "Audemars Piguet",
       "metrics": {
-        "records": 2500,
-        "views": 100978751,
-        "likes": 15166928,
-        "comments": 111423,
-        "shares": 1430006
+        "records": 3000,
+        "views": 450357176,
+        "likes": 68703490,
+        "comments": 736096,
+        "shares": 4269707
       },
       "platforms": {
-        "tiktok": 1833,
-        "instagram": 259,
-        "x": 14,
-        "reddit": 353,
-        "pinterest": 41
+        "tiktok": 617,
+        "instagram": 1208,
+        "x": 849,
+        "reddit": 306,
+        "pinterest": 20
       },
       "weekly": [
-        698608,
-        19231782,
-        10234339,
-        6950813,
-        82732963
+        40522943,
+        84695672,
+        106521060,
+        290246777,
+        172319330
       ],
       "narratives": [
         {
-          "label": "Audemarspiguet + Watches + Luxurywatch",
-          "description": "Cluster around #audemarspiguet, #watches, #luxurywatch, #royaloak, #watchcollector, drawn from 122 pieces by 98 creators across 4 platforms.",
-          "count": 122
+          "label": "WatchDotFun Tool",
+          "description": "Creators are discovering their watch alter egos and personalized watch cards using the new WatchDotFun tool, often surprised by its accuracy.",
+          "count": 44
         },
         {
-          "label": "Audemarspiguet + Royaloak + Luxurywatches",
-          "description": "Cluster around #audemarspiguet, #royaloak, #luxurywatches, #watchoftheday, #ap, drawn from 107 pieces by 81 creators across 4 platforms.",
-          "count": 107
+          "label": "Royal Oak Frosted Gold",
+          "description": "Posts showcase the Audemars Piguet Royal Oak Frosted Yellow Gold 37mm, alongside other luxury AP watches like the Ultra Thin Perpetual Titanium.",
+          "count": 39
         },
         {
-          "label": "Audemarspiguet + Luxurywatch + Royaloak",
-          "description": "Cluster around #audemarspiguet, #luxurywatch, #royaloak, #watchcollector, #watch, drawn from 101 pieces by 86 creators across 3 platforms.",
-          "count": 101
-        },
-        {
-          "label": "Audemarspiguet + Swatch + Ap",
-          "description": "Cluster around #audemarspiguet, #swatch, #ap, #royalpop, #royaloak, drawn from 77 pieces by 66 creators across 3 platforms.",
-          "count": 77
-        },
-        {
-          "label": "Audemarspiguet + Watches + Watch",
-          "description": "Cluster around #audemarspiguet, #watches, #watch, #royaloak, #luxurywatches, drawn from 71 pieces by 57 creators across 4 platforms.",
-          "count": 71
+          "label": "Rare Royal Oak Editions",
+          "description": "Content highlights rare and limited-edition Audemars Piguet Royal Oak models, including the 15300ST SogoSeibu exclusive and off-catalog tourbillon creations.",
+          "count": 21
         }
       ],
       "whitespace": [
         {
-          "tag": "offshoretaupe",
-          "premiumPct": 44.9
+          "tag": "audemarspiguetroyaloak",
+          "premiumPct": 25.1
         },
         {
-          "tag": "therealwatchroom",
-          "premiumPct": 44.9
+          "tag": "audemarspiguet",
+          "premiumPct": -9.6
         },
         {
-          "tag": "ukwatchcollection",
-          "premiumPct": 44.9
+          "tag": "vintagewatch",
+          "premiumPct": -3.3
         },
         {
-          "tag": "instawatch",
-          "premiumPct": 46.4
+          "tag": "royaloak",
+          "premiumPct": -26.5
         },
         {
-          "tag": "horlogerie",
-          "premiumPct": 50.7
+          "tag": "royaloakchronograph",
+          "premiumPct": -19.8
         }
       ],
       "posts": [
         {
           "platform": "tiktok",
-          "description": "Последний мой люксовый памперс 🤣 10/10……………………………………… Если бы Louis Vuitton делали diapers 🤣",
-          "views": 9100000,
-          "likes": 408900
+          "description": "🥹🇦🇷",
+          "views": 43500000,
+          "likes": 6800000
         },
         {
           "platform": "tiktok",
-          "description": "Raising you is my greatest privilege 🥰🐾❤️.",
-          "views": 2800000,
-          "likes": 601700
+          "description": "🇧🇷💔 NOOOOO @Arthur Lima @AugustoGimenez",
+          "views": 12300000,
+          "likes": 1900000
         },
         {
           "platform": "tiktok",
-          "description": "Audemars Piguet Royal Oak Chronograph 41mm unboxing",
-          "views": 2748189,
-          "likes": 102658
+          "description": "THE dating mistake almost every woman makes 💌🎀",
+          "views": 12300000,
+          "likes": 1600000
         }
       ]
     },
@@ -294,93 +294,83 @@
       "color": "#e0525c",
       "query": "Richard Mille",
       "metrics": {
-        "records": 2500,
-        "views": 178633377,
-        "likes": 22507802,
-        "comments": 141329,
-        "shares": 1862565
+        "records": 3000,
+        "views": 484771563,
+        "likes": 118745605,
+        "comments": 1876477,
+        "shares": 2819258
       },
       "platforms": {
-        "tiktok": 1953,
-        "instagram": 246,
-        "x": 31,
-        "reddit": 257,
-        "pinterest": 13
+        "tiktok": 556,
+        "instagram": 1096,
+        "x": 1138,
+        "reddit": 160,
+        "pinterest": 50
       },
       "weekly": [
-        772094,
-        19646088,
-        10179228,
-        7008317,
-        123098619
+        34427461,
+        142431394,
+        161503818,
+        338164016,
+        196418138
       ],
       "narratives": [
         {
-          "label": "RM67-02 Luxury Performance",
-          "description": "Creators are showcasing the Richard Mille RM67-02, highlighting its ultra-light design, skeleton movement, and bold aesthetics for luxury watch enthusiasts.",
-          "count": 140
+          "label": "Celebrity Richard Mille Sightings",
+          "description": "Creators share photos and videos of celebrities like Kylian Mbappé and Omar Sy wearing Richard Mille watches at events and with other luxury brands like Jaeger-LeCoultre and Bvlgari.",
+          "count": 40
         },
         {
-          "label": "Richard Mille Watch Collection",
-          "description": "Creators are sharing their extensive Richard Mille watch collections, often displaying multiple luxury timepieces for viewers to admire.",
-          "count": 99
+          "label": "Luxury Watch Brand Appreciation",
+          "description": "Creators highlight various luxury watch brands, including Franck Muller and Hublot, discussing their technical impressive movements and expressing general appreciation for high-end timepieces and cars.",
+          "count": 30
         },
         {
-          "label": "RM11-03 Luxury Watch Sales",
-          "description": "Creators are promoting the Richard Mille RM11-03 model, emphasizing its luxury status and availability through various watch sellers.",
-          "count": 92
-        },
-        {
-          "label": "Bubba Watson RM-055 Showcase",
-          "description": "Creators are featuring the Richard Mille 'Bubba Watson' RM-055 watch, highlighting its skeletonized movement and white ceramic case.",
-          "count": 70
-        },
-        {
-          "label": "Limited Edition Richard Mille",
-          "description": "Creators are showcasing limited edition Richard Mille watches, such as the RM11-02 Le Mans Classic, highlighting their rarity and investment value.",
-          "count": 50
+          "label": "Showcasing Richard Mille Watches",
+          "description": "Enthusiasts showcase their Richard Mille pieces, using tags like #rm3001 and #watchcollector, while also discussing luxury watches generally and comparing brands.",
+          "count": 23
         }
       ],
       "whitespace": [
         {
-          "tag": "bts",
-          "premiumPct": 108.4
+          "tag": "reverso",
+          "premiumPct": 57
         },
         {
-          "tag": "vacheronconstantin",
-          "premiumPct": 108.4
+          "tag": "jaegerlecoultre",
+          "premiumPct": 57
         },
         {
-          "tag": "millionaire",
-          "premiumPct": 108.4
+          "tag": "omarsy",
+          "premiumPct": 57
         },
         {
-          "tag": "fypage",
-          "premiumPct": 108.4
+          "tag": "insaneluxury",
+          "premiumPct": 42.2
         },
         {
-          "tag": "sylvesterstallone",
-          "premiumPct": 108.4
+          "tag": "hublot",
+          "premiumPct": 18.3
         }
       ],
       "posts": [
         {
-          "platform": "tiktok",
-          "description": "It takes up to 6 months to complete the Bugatti Chiron Baguette, sourcing the gems, cutting, polishing, and setting them",
-          "views": 20380510,
-          "likes": 1280440
+          "platform": "x",
+          "description": "🚨 BREAKING: Cristiano Ronaldo to retire from international football with Portugal after the World Cup, his sister Katia says. “Enjoy it while it lasts. It's ending soon. The info I have, from a re...",
+          "views": 14641511,
+          "likes": 119502
         },
         {
           "platform": "tiktok",
-          "description": "Adding a rich blue color to the sapphire case of the Jacob & Co. Bugatti Chiron makes it more challenging to manufacture",
-          "views": 15680226,
-          "likes": 663871
+          "description": "🇧🇷💔 NOOOOO @Arthur Lima @AugustoGimenez",
+          "views": 12300000,
+          "likes": 1900000
         },
         {
-          "platform": "tiktok",
-          "description": "Последний мой люксовый памперс 🤣 10/10……………………………………… Если бы Louis Vuitton делали diapers 🤣",
-          "views": 9100000,
-          "likes": 408900
+          "platform": "x",
+          "description": "Clavicular's nose job ruined by a random woman at a house party. https://t.co/lUa30B7fG6",
+          "views": 7878855,
+          "likes": 21929
         }
       ]
     },
@@ -390,93 +380,93 @@
       "color": "#34b3ac",
       "query": "Omega watches",
       "metrics": {
-        "records": 2500,
-        "views": 102404687,
-        "likes": 16954786,
-        "comments": 117350,
-        "shares": 1569509
+        "records": 3000,
+        "views": 838389671,
+        "likes": 121798066,
+        "comments": 836012,
+        "shares": 15762980
       },
       "platforms": {
-        "tiktok": 1868,
-        "instagram": 228,
-        "x": 5,
-        "reddit": 370,
-        "pinterest": 29
+        "tiktok": 1650,
+        "instagram": 723,
+        "x": 148,
+        "reddit": 475,
+        "pinterest": 4
       },
       "weekly": [
-        809869,
-        19270351,
-        9709781,
-        6949305,
-        96589511
+        166114724,
+        167404151,
+        328084981,
+        481726379,
+        190737534
       ],
       "narratives": [
         {
-          "label": "The Beauty Of Omega",
-          "description": "Content in this cluster celebrates Omega watches as a symbol of identity and status, praising their beauty and versatility to match any outfit.",
-          "count": 171
+          "label": "Luxury Watch Status Symbol",
+          "description": "Posts discuss luxury watches as a status symbol, showcasing expensive timepieces from brands like Richard Mille and debating the concept of 'flexing' with watches.",
+          "count": 63
         },
         {
-          "label": "Omega Speedmaster Chronograph",
-          "description": "This cluster highlights the Omega Speedmaster, discussing its various models, rich history as a racing chronograph, and the stunning 3861 movement.",
-          "count": 126
+          "label": "Omega Speedmaster Enthusiasts",
+          "description": "Creators are displaying their Omega Speedmaster watches, focusing on watch photography and expressing their enthusiasm for the timepiece.",
+          "count": 55
         },
         {
-          "label": "Omega Seamaster Diver 300M",
-          "description": "Users feature the Omega Seamaster Diver 300M, often referencing its connection to James Bond and its iconic status as a dive watch.",
-          "count": 115
+          "label": "Luxury Watch Collections",
+          "description": "Users are sharing their personal watch collections, featuring luxury brands like Rolex, Omega, and Richard Mille, and engaging in discussions about them.",
+          "count": 50
         },
         {
-          "label": "Omega Speedmaster Moonwatch Heritage",
-          "description": "This cluster focuses on the Omega Speedmaster Moonwatch, highlighting its Hesalite crystal, black dial, and its legendary status in horology.",
-          "count": 106
+          "label": "Vintage Omega Constellation",
+          "description": "Content focuses on vintage Omega Constellation watches, showcasing new acquisitions and detailing specific models with their features and authenticity guarantees.",
+          "count": 45
         },
         {
-          "label": "Diverse Omega Models",
-          "description": "Content in this cluster presents a variety of Omega watches, including the Seamaster Aqua Terra for couples and the De Ville, encouraging viewers to choose their preference.",
-          "count": 61
+          "label": "Omega Seamaster Aqua Terra Features",
+          "description": "Posts highlight the features of the Omega Seamaster Aqua Terra, specifically its lacquered black dial with a date at 6 and rhodium-plated markers that glow blue.",
+          "count": 44
         }
       ],
       "whitespace": [
         {
-          "tag": "danielcraig",
-          "premiumPct": 58.8
+          "tag": "presage",
+          "premiumPct": 66.4
         },
         {
-          "tag": "bond",
-          "premiumPct": 68.3
+          "tag": "seikopresage",
+          "premiumPct": 66.4
         },
         {
-          "tag": "goldwatch",
-          "premiumPct": 67.7
+          "tag": "classicseries",
+          "premiumPct": 66.4
         },
         {
-          "tag": "seamasterdiver300m",
-          "premiumPct": 67.5
+          "tag": "automatic",
+          "premiumPct": 66.4
         },
         {
-          "tag": "satisfying",
-          "premiumPct": 55.4
+          "tag": "6r51",
+          "premiumPct": 66.4
         }
       ],
       "posts": [
         {
           "platform": "tiktok",
-          "description": "Последний мой люксовый памперс 🤣 10/10……………………………………… Если бы Louis Vuitton делали diapers 🤣",
-          "views": 9100000,
-          "likes": 408900
+          "description": "@スザキ🍖Suzaki",
+          "views": 19900000,
+          "likes": 507200
         },
         {
           "platform": "tiktok",
-          "description": "Raising you is my greatest privilege 🥰🐾❤️.",
-          "views": 2800000,
-          "likes": 601700
+          "description": "El efecto papá de 👧🏻👧🏻",
+          "views": 18200000,
+          "likes": 3100000
         },
         {
           "platform": "tiktok",
-          "description": "If Q gives you a box like that, you know things are getting serious. This set was made for the 50th anniversary of the 1969 movie “On Her Majesty's Secret Service” of the 007 saga. The set includes...",
-          "views": 2654000,
-          "likes": 176311
+          "description": "“Yesterday Messi…”. “𝐍𝐄𝐗𝐓 𝐐𝐔𝐄𝐒𝐓𝐈𝐎𝐍” 🙅🏼‍♂️ 🎥 wlv_S1 on X — Match",
+          "views": 17400000,
+          "likes": 1900000
         }
       ]
     }
