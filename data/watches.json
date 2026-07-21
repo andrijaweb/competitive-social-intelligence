@@ -1,0 +1,484 @@
+{
+  "topic": "watches",
+  "generatedAt": "2026-07-21T10:10:36.834Z",
+  "window": "30d",
+  "weekLabels": [
+    "Jun 21-26",
+    "Jun 27-Jul 2",
+    "Jul 3-8",
+    "Jul 9-14",
+    "Jul 15-20"
+  ],
+  "entities": [
+    {
+      "id": "rolex",
+      "name": "Rolex",
+      "color": "#cba135",
+      "query": "Rolex watches",
+      "metrics": {
+        "records": 1404,
+        "views": 75311708,
+        "likes": 2718533,
+        "comments": 5600,
+        "shares": 5711
+      },
+      "platforms": {
+        "tiktok": 826,
+        "instagram": 63,
+        "x": 11,
+        "reddit": 456,
+        "pinterest": 48
+      },
+      "weekly": [
+        2009858,
+        2169546,
+        1617371,
+        203396,
+        68586
+      ],
+      "narratives": [
+        {
+          "label": "Rolex Day-Date And Datejust Pairs",
+          "description": "This narrative features Rolex Day-Date and Datejust models, often presented as 'his and hers' or 'couples' sets. Content includes showcases of Datejust 41 and Day-Date 40 watches, with specific dial colors like chocolate and rhodium, sometimes from jewelers like Trotters Jewellers.",
+          "count": 198
+        },
+        {
+          "label": "Vintage And Pre-Owned Rolex Models",
+          "description": "This narrative features discussions and listings of various Rolex models, with a strong emphasis on vintage and pre-owned pieces like the Submariner, Day-Date, and Yacht-Master II. Content includes watch collector opinions and promotions from official retailers and jewelers such as Bucherer1888.",
+          "count": 192
+        },
+        {
+          "label": "Rolex GMT-Master II Models",
+          "description": "This narrative is centered on Rolex GMT-Master II watches, featuring specific models like the 'Lefty' Sprite, Batman, and Hulk. Content includes showcase posts from jewelers like Trotters Jewellers, highlighting various GMT-Master II references and their designs.",
+          "count": 180
+        },
+        {
+          "label": "Luxury Wristwear And Rolex Collections",
+          "description": "This narrative showcases various luxury watches, primarily Rolex models like the Submariner, Daytona, and Datejust, often alongside Audemars Piguet (AP). Content features collectors displaying their 'Rolex gang' or 'big player' status with multiple watches, emphasizing elitestyle and luxury wristwear.",
+          "count": 128
+        },
+        {
+          "label": "New Rolex Releases And Favorites",
+          "description": "This narrative explores new Rolex releases and popular models like the Explorer 40 and GMT Batman/Sprite. Content includes questions about favorite Rolex models, discussions about 2023 novelties, and giveaways for models such as the Rolex GMT, targeting watch collectors and enthusiasts.",
+          "count": 125
+        }
+      ],
+      "whitespace": [
+        {
+          "tag": "watchnerd",
+          "premiumPct": 90.9
+        },
+        {
+          "tag": "drip",
+          "premiumPct": 97.6
+        },
+        {
+          "tag": "hongkong",
+          "premiumPct": 101.1
+        },
+        {
+          "tag": "trottersjewellers",
+          "premiumPct": 89.1
+        },
+        {
+          "tag": "dubai",
+          "premiumPct": 74.9
+        }
+      ],
+      "posts": [
+        {
+          "platform": "tiktok",
+          "description": "The perfect couples set 🩷🤎",
+          "views": 8623731,
+          "likes": 225767
+        },
+        {
+          "platform": "tiktok",
+          "description": "2019 Rolex Day-Date 40 (228238)",
+          "views": 3429646,
+          "likes": 163395
+        },
+        {
+          "platform": "tiktok",
+          "description": "A combination of his and hers chocolate dial datejusts 🍫💎",
+          "views": 2585259,
+          "likes": 190172
+        }
+      ]
+    },
+    {
+      "id": "patek-philippe",
+      "name": "Patek Philippe",
+      "color": "#4c8a6e",
+      "query": "Patek Philippe",
+      "metrics": {
+        "records": 1258,
+        "views": 28321365,
+        "likes": 901908,
+        "comments": 4114,
+        "shares": 964
+      },
+      "platforms": {
+        "tiktok": 699,
+        "instagram": 81,
+        "x": 19,
+        "reddit": 424,
+        "pinterest": 35
+      },
+      "weekly": [
+        1310688,
+        3461903,
+        362802,
+        814406,
+        440761
+      ],
+      "narratives": [
+        {
+          "label": "Iconic Patek Philippe Nautilus 5711/1A",
+          "description": "This cluster showcases the iconic Patek Philippe Nautilus ref 5711/1A-010 in stainless steel with a blue dial. Content frequently features videos and images of this specific model, often referencing its timeless design and status as a luxury timepiece.",
+          "count": 172
+        },
+        {
+          "label": "New Patek Philippe Nautilus Unboxings",
+          "description": "This cluster focuses on unboxing and showcasing new Patek Philippe Nautilus models, particularly the 5712/1R. Users express excitement and rate the aesthetics of these luxury timepieces, often highlighting their stunning appearance and cost.",
+          "count": 165
+        },
+        {
+          "label": "Patek Philippe Aquanaut Rose Gold",
+          "description": "This cluster highlights the Patek Philippe Aquanaut, specifically the 5167R rose gold model with a brown dial and matching strap. Content from creators like ZMAN Timepieces emphasizes its blend of casual and refined luxury, often noting its availability.",
+          "count": 148
+        },
+        {
+          "label": "Patek Philippe Nautilus Rose Gold Models",
+          "description": "This narrative centers on specific rose gold Patek Philippe Nautilus models, such as the 5711/1R and 5712R. Content features discussions and displays of these elegant watches, with creators asking which model users prefer and highlighting their availability in boutiques.",
+          "count": 140
+        },
+        {
+          "label": "Blancpain Watches and Luxury Lifestyle",
+          "description": "This cluster features discussions around Blancpain watches, including 'Ultra Thin' models. The content also includes broader themes of luxury lifestyle, with references to flying private and acquiring desirable items.",
+          "count": 122
+        }
+      ],
+      "whitespace": [
+        {
+          "tag": "marcgebauer",
+          "premiumPct": 94.7
+        },
+        {
+          "tag": "foryoupage",
+          "premiumPct": 59
+        },
+        {
+          "tag": "timelessdesign",
+          "premiumPct": 97.1
+        },
+        {
+          "tag": "dubai",
+          "premiumPct": 57.3
+        },
+        {
+          "tag": "melbourne",
+          "premiumPct": 96.3
+        }
+      ],
+      "posts": [
+        {
+          "platform": "tiktok",
+          "description": "Please don’t be ugly….",
+          "views": 4355428,
+          "likes": 137009
+        },
+        {
+          "platform": "tiktok",
+          "description": "Jewelry Boxes Love Up to 25% Off",
+          "views": 1700000,
+          "likes": 246
+        },
+        {
+          "platform": "tiktok",
+          "description": "shes stunninggg 😍✨💗 シ゚viral",
+          "views": 1311740,
+          "likes": 150600
+        }
+      ]
+    },
+    {
+      "id": "audemars-piguet",
+      "name": "Audemars Piguet",
+      "color": "#6683f5",
+      "query": "Audemars Piguet",
+      "metrics": {
+        "records": 1218,
+        "views": 39855551,
+        "likes": 1632929,
+        "comments": 5378,
+        "shares": 50
+      },
+      "platforms": {
+        "tiktok": 707,
+        "instagram": 49,
+        "x": 6,
+        "reddit": 411,
+        "pinterest": 45
+      },
+      "weekly": [
+        732929,
+        3928076,
+        340232,
+        853250,
+        426703
+      ],
+      "narratives": [
+        {
+          "label": "Royal Oak Skeleton & Collectibles",
+          "description": "Posts focus on the Audemars Piguet Royal Oak Skeleton Openworked models, such as the REF: 15305ST.OO.1220ST.01, and other highly collectible Royal Oak pieces. Content also mentions exclusive commissions, like the 25-piece limited edition gifted by Anant Ambani.",
+          "count": 425
+        },
+        {
+          "label": "Rolex Daytona & Vacheron Constantin Overseas",
+          "description": "Content in this cluster predominantly features Rolex Daytona models, specifically the Cosmograph Daytona and 'Panda Daytona', alongside new iterations of the Vacheron Constantin Overseas Self-Winding watch. Posts discuss luxury lifestyle and watch advice, with some creators expressing a shift away from Rolex.",
+          "count": 196
+        },
+        {
+          "label": "Royal Oak Black Dial 15400ST",
+          "description": "Content creators like Marc Gebauer showcase the Audemars Piguet Royal Oak Black Dial 2014 (Ref. 15400ST) as an iconic timepiece. Posts highlight its elegance and sportiness, often featuring the 41mm blue dial model as well.",
+          "count": 96
+        },
+        {
+          "label": "Royal Oak Offshore Models",
+          "description": "This narrative highlights the Audemars Piguet Royal Oak Offshore collection, featuring models like the 15703ST and various chronographs, including black ceramic versions. Discussions include availability in boutiques and general thoughts on the Offshore line.",
+          "count": 91
+        },
+        {
+          "label": "Royal Oak Chronograph Unboxing",
+          "description": "This cluster features unboxing videos and discussions of various Audemars Piguet Royal Oak models, particularly the 41mm Chronograph. Regional mentions like Toronto and Mayfair indicate local enthusiast activity and retail discussions.",
+          "count": 86
+        }
+      ],
+      "whitespace": [
+        {
+          "tag": "toronto",
+          "premiumPct": 95.1
+        },
+        {
+          "tag": "blue",
+          "premiumPct": 61.2
+        },
+        {
+          "tag": "chrono24",
+          "premiumPct": 83.4
+        },
+        {
+          "tag": "watchnerd",
+          "premiumPct": 66.5
+        },
+        {
+          "tag": "watchoftheday",
+          "premiumPct": 49
+        }
+      ],
+      "posts": [
+        {
+          "platform": "tiktok",
+          "description": "Audemars Piguet Royal Oak Chronograph 41mm unboxing",
+          "views": 2748189,
+          "likes": 102658
+        },
+        {
+          "platform": "tiktok",
+          "description": "Audemars Piguet Royal Oak Chronograph 41mm unboxing",
+          "views": 2748186,
+          "likes": 102658
+        },
+        {
+          "platform": "tiktok",
+          "description": "Audemars Piguet Royal Oak Chronograph 41mm unboxing",
+          "views": 2748185,
+          "likes": 102658
+        }
+      ]
+    },
+    {
+      "id": "richard-mille",
+      "name": "Richard Mille",
+      "color": "#e0525c",
+      "query": "Richard Mille",
+      "metrics": {
+        "records": 965,
+        "views": 94147209,
+        "likes": 5758772,
+        "comments": 4262,
+        "shares": 400
+      },
+      "platforms": {
+        "tiktok": 597,
+        "instagram": 50,
+        "x": 23,
+        "reddit": 279,
+        "pinterest": 16
+      },
+      "weekly": [
+        7461212,
+        3555259,
+        931942,
+        954256,
+        447021
+      ],
+      "narratives": [
+        {
+          "label": "Richard Mille and Jacob & Co. Luxury Watches",
+          "description": "This narrative features high-end timepieces from Richard Mille and Jacob & Co., including specific models like the Bugatti Chiron Baguette. Content highlights the intricate manufacturing processes, such as gem setting and sapphire case coloring, required for these luxury watches.",
+          "count": 449
+        },
+        {
+          "label": "Bulgari Octo Finissimo Ultra Thin Watches",
+          "description": "This narrative centers on Bulgari's Octo Finissimo Ultra COSC, highlighting its status as the world’s thinnest COSC-certified mechanical watch. It details the watch's platinum construction and limited production of 20 pieces.",
+          "count": 181
+        },
+        {
+          "label": "Celebrity-Owned Richard Mille Watches",
+          "description": "This content showcases Richard Mille watches, focusing on specific models like the RM12-01 'Sapphire Blue Tourbillion' worn by J Balvin and the RM 52-01 'Tourbillon Skull' previously owned by Sylvester Stallone. It discusses the delicate crafting process and the watches' value at auction.",
+          "count": 92
+        }
+      ],
+      "whitespace": [
+        {
+          "tag": "bubbawatson",
+          "premiumPct": 74.2
+        },
+        {
+          "tag": "richardmillewatch",
+          "premiumPct": 67
+        },
+        {
+          "tag": "fy",
+          "premiumPct": 68.8
+        },
+        {
+          "tag": "superwatchman",
+          "premiumPct": 74.6
+        },
+        {
+          "tag": "bulgari",
+          "premiumPct": 63.3
+        }
+      ],
+      "posts": [
+        {
+          "platform": "tiktok",
+          "description": "It takes up to 6 months to complete the Bugatti Chiron Baguette, sourcing the gems, cutting, polishing, and setting them",
+          "views": 20380510,
+          "likes": 1280440
+        },
+        {
+          "platform": "tiktok",
+          "description": "Adding a rich blue color to the sapphire case of the Jacob & Co. Bugatti Chiron makes it more challenging to manufacture",
+          "views": 15680226,
+          "likes": 663871
+        },
+        {
+          "platform": "tiktok",
+          "description": "@J Balvin is wearing his INSANE Piece Unique Richard Mille RM12-01 ‘Sapphire Blue Tourbillion’, a fantastic timepiece that during the crafting required a very delicate process that didn't allow eve...",
+          "views": 6161847,
+          "likes": 320238
+        }
+      ]
+    },
+    {
+      "id": "omega",
+      "name": "Omega",
+      "color": "#34b3ac",
+      "query": "Omega watches",
+      "metrics": {
+        "records": 1151,
+        "views": 34201055,
+        "likes": 1302316,
+        "comments": 2506,
+        "shares": 72
+      },
+      "platforms": {
+        "tiktok": 656,
+        "instagram": 30,
+        "x": 6,
+        "reddit": 426,
+        "pinterest": 33
+      },
+      "weekly": [
+        701781,
+        3446969,
+        386505,
+        835422,
+        488801
+      ],
+      "narratives": [
+        {
+          "label": "Omega Seamaster Dive and GMT Models",
+          "description": "This narrative features various Omega Seamaster models, including blue dial unboxings, the 'Commander' 007 edition, and GMT variations. Content often focuses on the watches themselves and luxury lifestyle elements.",
+          "count": 194
+        },
+        {
+          "label": "Omega Speedmaster Moonwatch Snoopy Editions",
+          "description": "This narrative specifically covers the Omega Speedmaster 'Snoopy' and 'Moonshine Gold' editions, featuring unboxing videos and showcasing various strap combinations with the watches. Content creators often highlight the cosmic details and accessories.",
+          "count": 170
+        },
+        {
+          "label": "Omega Speedmaster Professional Moonwatch Photography",
+          "description": "This narrative focuses on the Omega Speedmaster Professional Moonwatch, including the 'Reduced' model, with content showcasing watch photography and features from watch enthusiast accounts like @watchmando.",
+          "count": 110
+        },
+        {
+          "label": "Omega Constellation Ladies & First Luxury Watch",
+          "description": "This narrative features Omega Constellation watches, specifically highlighting ladies' models with features like salmon pink dials. Posts also include discussions around purchasing a 'first luxury watch' and general daily style.",
+          "count": 97
+        },
+        {
+          "label": "Vintage Omega Watch Collectors",
+          "description": "This narrative is dedicated to vintage Omega watches, showcasing rare models like the Omega Cosmic and Geneve. Collectors often share their appreciation for classic Omega timepieces and their personal collections.",
+          "count": 96
+        }
+      ],
+      "whitespace": [
+        {
+          "tag": "trending",
+          "premiumPct": 64.5
+        },
+        {
+          "tag": "watchesoftiktok",
+          "premiumPct": 57.4
+        },
+        {
+          "tag": "goldwatch",
+          "premiumPct": 81.3
+        },
+        {
+          "tag": "notts",
+          "premiumPct": 74.5
+        },
+        {
+          "tag": "nottingham",
+          "premiumPct": 74.5
+        }
+      ],
+      "posts": [
+        {
+          "platform": "tiktok",
+          "description": "If Q gives you a box like that, you know things are getting serious. This set was made for the 50th anniversary of the 1969 movie “On Her Majesty's Secret Service” of the 007 saga. The set includes...",
+          "views": 2654000,
+          "likes": 176311
+        },
+        {
+          "platform": "tiktok",
+          "description": "Moonshine Gold is a great addition to the Moonswatch collection 😍",
+          "views": 2239554,
+          "likes": 63033
+        },
+        {
+          "platform": "tiktok",
+          "description": "Jewelry Boxes Love Up to 25% Off",
+          "views": 1700000,
+          "likes": 246
+        }
+      ]
+    }
+  ]
+}
